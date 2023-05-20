@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* color: 
+        dark brown: #3B130B
+        brown #B07062
+        green: #5F7161
+        amarillito: #FEFAE0
+        clarito: #F0ECE2
+
+foont-family
+font-family: 'Raleway', sans-serif;
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: rgb(176, 113, 99);
+    color: rgb(240, 236, 226);
+    list-style: none;
+    padding: 1rem 3rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.searchIcono {
+    background-color: rgba(176, 112, 98, 0.40);
+    color: #F0ECE2;
+    border-color: rgba(59, 19, 11, 0.64);
+    border-style:inset;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+    width: 15rem;
+}
+
+.simple {
+    padding: 1rem 0;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.simple a{
+    color:#F0ECE2;
+    text-decoration: none;
+    font-size: 20px;
+}
+.barraplant {
+    padding: 1em 0;
+    letter-spacing: 1px;
+}
+.pbb, .bab {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+.cookies {
+    width: 100%;
+    height: 40rem;;
+    background-image: url(../assets/fotos/index/browniecookie.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titulos{
+
+    background-color: rgb(95, 113, 97);
+    color: #FEFAE0;
+    border: 5rem;
+    padding: 7rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.tituloS {
+    letter-spacing: 5px;
+    margin-bottom: 1rem;
+    font-size: 75px;
+    font-weight: 250;
+}
+
+.titulo2 {
+    font-weight: 400;
+    font-size: 40px;
+    padding: 1rem;
+}
+
+.chocotorta {
+    width: 100%;
+    background-image: url(../assets/fotos/index/chocotorta.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.chocotorta button{
+    width: 38rem;
+    height: 40rem;
+    background-color: #FEFAE0;
+    border-radius: 5em;
+    border-color: #FEFAE0;
+    padding: 40px;
+    color: #3B130B;
+    margin: 25px;
+    font-size: 20px;
+
+}
+
+.BHistoria {
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.BWorkshops {
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.BCatering {
+    text-align: center;
+    padding: 1rem 0;
+    font-weight: 600;
+}
+
+.BContactanos {
+    text-align: center;
+    padding: 1.5rem 0;
+    font-weight: 600;
+}
+
+.frase {
+    color: #FEFAE0;
+    background-color: #3B130B;
+    padding: 5rem;
+    letter-spacing: 2px;
+    text-align: center;
+
+}
+
+.parrafo {
+    font-weight: 200;
+    font-style: italic;
+    line-height: 3rem;
+}
+
+
+.conocenos, .catering {
+    background-color: #FEFAE0;
+    color: #3B130B;
+    padding: 0rem 2rem;
+    width: 100%;
+    height: 500px;
+}
+
+.conocenos p, .catering p {
+    padding: 1rem 0 2rem 0;
+    line-height: 2rem;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.conocenos button, .catering button {
+    background-color: #5F7161;
+    border-radius: 3rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 18px;
+}
+
+.conocenos button a, .catering button a {
+    text-decoration: none;
+    color: #FEFAE0;
+}
+
+.conocenos img{
+    height: 300px;
+}
+
+.catering img{
+    height: 300px;
+}
+
+.workshops img{
+    height: 300px;
+}
+
+.contactanos img{
+    height: 300px;
+}
+
+.workshops, .contactanos {
+    background-color: #5F7161;
+    color:#F0ECE2;
+    padding: 0 2rem;
+    width: 100%;
+    height: 500px;
+}
+
+.workshops p, .contactanos p {
+    padding: 1rem 0 2rem 0;
+    line-height: 2rem;
+    font-size: 18px;
+    font-weight: 200;
+}
+.workshops button, .contactanos button {
+    background-color: #FEFAE0;
+    border-radius: 3rem;
+    text-decoration: none;
+    padding: 0.5rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 18px;
+}
+
+.workshops button a, .contactanos button a {
+    text-decoration: none;
+    color:#3B130B;
+}
+
+footer{
+    background-color: #B07062;
+    color: #F0ECE2;
+    padding: 2rem 1rem 1rem 3rem;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.footerTitulos {
+    font-weight: normal;
+    line-height: 1.5rem;
+}
+
+.footerTitulos h4 {
+    font-size: 20px;
+}
+
+.footerTitulos a {
+    text-decoration: none;
+    color: #F0ECE2;
+}
+.footerDatos {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+
+.footerIconos {
+    padding: 1rem 0;
+}
+
+/* DESK1 */
+
+
+.quienesSomos {
+
+    height: 70rem;
+    background-image: url(../assets/fotos/otras-paginas/desktop2-1.jpg);
+    background-repeat: no-repeat;
+    color: #3B130B;
+    background-size: cover;
+}
+.Somos {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 4rem;
+    font-size: 24px;
+    font-weight: 200;
+}
+
+.Somos h2 {
+    padding-bottom: 3rem;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.Somos p{
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+.porqueElegir {
+    height: 70rem;
+    background-image: url(../assets/fotos/otras-paginas/desktop2-2.jpg);
+    background-repeat: no-repeat;
+    color: #3B130B;
+    background-size: cover;
+}
+
+.Elegir {
+    width: 100%;
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 4rem;
+    font-size: 26px;
+    font-weight: 200;
+}
+.Elegir h2 {
+    padding-bottom: 3rem;
+    font-size: 45px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.Elegir p{
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+
+
+
+/* DESK 2 */
+
+
+
+.deskworkshops {
+    color: #3B130B;
+    background-image: url(../assets/fotos/otras-paginas/desktop3.jpg);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 4rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.deskworkshops h2{
+    padding-bottom: 3rem;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.deskworkshops button{
+    background-color: rgba(95, 113, 97, 0.6);
+    color: #FEFAE0;
+    width: 35rem;
+    height: 10rem;
+    border-radius: 2rem;
+    margin: 3rem;
+    font-size: 30px;
+    border: none;
+}
+
+.deskworkshops button a {
+    color: #FEFAE0;
+    text-decoration: none;
+}
+
+/* DESK 3 */
+
+.deskcatering{
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/fotos/otras-paginas/desktop4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #F0ECE2;
+    text-align: center;
+    font-size: 32px;
+    padding: 3rem;
+}
+
+.deskcatering h2{
+    padding: 4rem 0 40rem 0;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.botonesCatering button{
+    height: 7rem;
+    width: 25rem;
+    margin: 10px;
+    border-radius: 5rem;
+    font-size: 30px;
+}
+
+.botonTorta a, .botonCookies a{
+    color: #3B130B;
+    text-decoration: none;
+}
+
+.botonTorta, .botonCookies{
+    background-color: rgba(240, 236, 226, 0.7);
+}
+
+.botonAlfajores a, .botonEspeciales a{
+    color: #F0ECE2;
+    text-decoration: none;
+}
+
+.botonAlfajores, .botonEspeciales {
+    background-color: rgba(59, 19, 11, 0.6);
+}
+
+
+/* DESK 4 */
+
+.contactodesk4 {
+    background-color: #F0ECE2;
+    color: #3B130B;
+    line-height: 1.5rem;
+    padding-left: 3rem;
+    text-align: left center;
+}
+
+.contactanosDescripcion h2 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 4rem 0 2rem 0;
+}
+
+.contactanosDescripcion h4 {
+    font-size: 22px;
+    font-weight: 350;
+    padding-top: 1rem;
+}
+
+.contactanosDescripcion p {
+    font-size: 18px;
+    font-weight: 250;
+    letter-spacing: 1px;
+    padding: 1rem 0 1rem 0;
+}
+
+.formulario input, .formulario textarea, .formulario ::placeholder {
+    font-size: 18px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #5F7161;
+    color: #FEFAE0;
+    border-radius: 1rem;
+}
+
+.formulario .apellido, .formulario .email {
+    padding-left: 8.5rem;
+}
+
+.mapa {
+    background-color: #F0ECE2;
+}
