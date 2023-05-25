@@ -19,25 +19,25 @@
         <header>
             <section class="barra">
                 <div class="simple">
-                <a href="../index.html"><h3>SIMPLE</h3></a>
+                    <a href="../index.html"><h3>SIMPLE</h3></a>
                 </div>
                 <div class="barraplant">
                     <h4 class="pbb"><em>Plant Based Pastries</em></h4>
-                    <h5 class="bab">by <span class="Ailin">Ailin Alvarez</span></h5>
+                    <h5 class="bab"><i><strong>by</strong> </i><span class="Ailin">Ailin Alvarez</span></h5>
                 </div>
                 <div class="iconos">
                     <nav> 
                         <ul>
                             <li>
                                 <form>
-                                    <label for="">
-                                        <input type="search" class="searchIcono">
-                                        <img src="../assets/iconos/search.png" alt="">
+                                    <label for="lupa" class="search">
+                                        <input type="search" class="searchIcono" name="lupa">
+                                        <img src="../assets/iconos/search.png" alt="lupa">
                                     </label>
                                 </form>
                             </li> 
-                            <li><a href=""><img src="../assets/iconos/menu.png" alt="menu"></a></li> 
-                            <li><a href=""><img src="../assets/iconos/shopping.png" alt="bolsa-de-compras"></a></li> 
+                            <li class="menu"><a href=""><img src="../assets/iconos/menu.png" alt="menu"></a></li> 
+                            <li class="shopping" ><a href=""><img  src="../assets/iconos/shopping.png" alt="bolsa de compras"></a></li> 
                         </ul>
                     </nav>
                 </div>
@@ -48,59 +48,69 @@
             <section class="contactodesk4">
                 <div class="contactanosDescripcion">
                     <h2>Contactanos</h2>
-                    <p class="contacto-p">Si precisas información sobre nuestros productos y servicios, quieres solicitar un presupuesto para un evento privado o enviar una sugerencia, puede contactar con nosotros a través de este formulario.</p>
+                    <p class="contacto-p">Si necesitas información sobre nuestros productos y servicios, quieres solicitar un presupuesto para un evento privado o enviar una sugerencia, puede contactar con nosotros a través de este formulario.</p>
                     <h4>Dirección</h4>
                     <p class="dire">Boulevarden 47,  164 74,  Täby, Estocolmo, Suecia.</p>
                     <h4>Teléfono</h4>
                     <p class="tel">+46 72 768 2528</p>
-                    <h4>Email</h4>
+                    <h4>E-mail</h4>
                     <p class="mail">simple.pastries@gmail.com</p>
                 </div>
                 <div class="formulario">
                     <form action="">
                         <div class="nombrecompleto">
-                            <label for="Nombre" class="nombre"></label>
-                            <input type="text" name="nombre" placeholder="Nombre">
-                            <label for="Apellido" class="apellido"></label>
-                            <input type="text" name="Apellido" placeholder="Apellido">
+                            <label for="Nombre" class="nombre">
+                                <input type="text" name="nombre" placeholder="Nombre">
+                            </label>
+                            <label for="Apellido" class="apellido">
+                                <input type="text" name="Apellido" placeholder="Apellido">
+                            </label>
+                            
                         </div>
                         <div class="celmail">
-                            <label for="Telefono" class="telefono"></label>
-                            <input type="numbers" name="Telefono" placeholder="Telefono">
-                            <label for="Email" class="email"></label>
-                            <input type="email" name="Email" placeholder="Email">
+                            <label for="Telefono" class="telefono">
+                                <input type="numbers" name="Telefono" placeholder="Teléfono">
+                            </label>
+                            <label for="Email" class="email">
+                                <input type="email" name="Email" placeholder="E-mail" required>
+                            </label>
                         </div>
-                        <div>
-                            <textarea name="texto"  cols="60" rows="20" placeholder="Mensaje"></textarea>
+                        <div class="mensaje">
+                            <!-- <textarea  name="texto" cols="58" rows="15" placeholder="Mensaje"></textarea> -->
+                            <textarea  name="texto"  placeholder="Mensaje"></textarea>
                         </div>
-                        <div>
+                        <div class="enviar">
                             <input type="submit" class="enviarForm">
                         </div>
                     </form>
                 </div>
             </section>
             <section class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2028.3256392564633!2d18.087821!3d59.444321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9ba25fccea1f%3A0xd119e32630845b4c!2sBoulevarden%2047%2C%20164%2074%20T%C3%A4by%2C%20Suecia!5e0!3m2!1ses!2ses!4v1682862137068!5m2!1ses!2ses" width="1900" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            </section>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2028.3256392564633!2d18.087821!3d59.444321!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f9ba25fccea1f%3A0xd119e32630845b4c!2sBoulevarden%2047%2C%20164%2074%20T%C3%A4by%2C%20Suecia!5e0!3m2!1ses!2ses!4v1682862137068!5m2!1ses!2ses" width="100%" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>            
+            </section>
         </main>
 
         <footer>
             <div class="footerTitulos">
-                <h4> <a href="../index.html">SIMPLE</a></h4>
-                <h5>Plant based pastries</h5>
-                <h5>by Ailin Alvarez</h5>
+                <h4> <a class="fsimple" href="../index.html">SIMPLE</a></h4>
+                <h5 class="fpbp">Plant based pastries</h5>
+                <h5 class="failin"><i><strong> by</strong></i> Ailin Alvarez</h5>
             </div>
+    
             <div class="footerDatos">
-                <p>Boulevarden 47, Täby, Estocolmo, 164 74 Suecia.</p>
-                <p>+46 72 768 2528</p>
-                <p>simple.pastries@gmail.com</p>
+                <p class="fdire">Boulevarden 47, Täby, Estocolmo, Suecia.</p>
+                <p class="ftel">+46 72 768 2528</p>
+                <p class="fmail">simple.pastries@gmail.com</p>
             </div>
+    
             <div>
                 <ul class="footerIconos">
-                    <li><a href="https://www.instagram.com/simple.pastries/"><img src="../assets/iconos/ig.png" alt="IG"></a></li>
-                    <li><a href=""><img src="../assets/iconos/Facebook.png" alt="Facebook"></a></li>
-                    <li><a href=""><img src="../assets/iconos/youtube.png" alt="Youtube"></a></li>
+                    <li class="fig"><a href="https://www.instagram.com/simple.pastries/"><img src="../assets/iconos/ig.png" alt="IG"></a></li>
+                    <li class="ffb"><a href=""><img src="../assets/iconos/Facebook.png" alt="Facebook"></a></li>
+                    <li class="fytb"><a href=""><img src="../assets/iconos/youtube.png" alt="Youtube"></a></li>
                 </ul>
             </div>
         </footer>
+    
     </body>
-</html>
+    </html>
