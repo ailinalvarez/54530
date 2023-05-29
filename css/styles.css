@@ -86,11 +86,20 @@ ul {
     width: 100%;
     display: flex;
     list-style-type: none;
-    gap: 2rem;
+    gap: 2.5rem;
     justify-content: center;
     align-items: center;
     padding-top: 1rem;
 }
+
+.searchIcono:focus {
+    outline-color: #B07062;
+    border: 3px solid #FEFAE0;
+    box-shadow: #F0ECE2;
+    background-color: #F0ECE2;
+    color: #3B130B;
+}
+
 
 .search{
     display: flex;
@@ -582,6 +591,11 @@ footer{
     width: 10rem;
     height: 4rem;
 }
+
+.formulario input, .formulario textarea, .formulario :focus {
+    outline-color: #5F7161;
+}
+
 
 .mapa {
     background-color: #F0ECE2;
@@ -1758,6 +1772,7 @@ footer{
         align-self: flex-start; */
         width: 29px;
     }
+    
     footer {
         display: flex;
         padding: 2rem 1rem 1.5rem 1rem;
