@@ -1,0 +1,172 @@
+
+
+@media (max-width:1440px) {
+    body {
+        header{
+            section {
+                grid-template-columns: 20% 30% 5% 45%;
+                .simple {
+                    h3 {
+                        font-size: 45px;
+                    }
+                }
+                .barraplant {
+                    h4 {
+                        em{
+                            padding-left: 23px ;
+                            font-weight: 300;
+                            font-size: 18px;
+                        }
+                    }
+                    h5 {
+                        i {
+                            strong {
+                                padding-left: 20px;
+                                font-size: 18px;
+                            }
+                        }
+                        span{
+                            @extend i;
+                            font-weight: 300;
+                        }
+                    }
+                }
+                .iconos {
+                    nav{
+                        ul {
+                            padding-left: 3rem;
+                            justify-content: end;
+                            li {
+                                form {
+                                    label {
+                                        img {
+                                            width:37px;
+                                        }
+                                    }
+                                }
+                                a{
+                                    img{
+                                        width:37px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        main {
+            .hero {
+                .titulos{
+                    height: 320px;
+                    h1 {
+                        font-size: 85px;
+                    }
+                    h2{
+                        font-size: 57px;
+                    }
+                }
+                .chocotorta {
+                    height: 94rem;
+                    .botones {
+                        div {
+                            button {
+                                padding: 30px;
+                                width: 18rem;
+                                height: 20rem;
+                                border-radius: 4.5rem;
+                                }
+                                & :hover {
+                                    h2 {
+                                    font-size: 37px;
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+                .frase {
+                    padding: 3rem 10rem;
+                }
+                .secciones {
+                    padding: 0 6rem;
+                    height: 320px;
+                    .bp {
+                        p {
+                            line-height: 28px;
+                            padding: 1.5rem 0 1.5rem 4rem;
+                        }
+                        button {
+                            margin: 1rem;
+                            border-radius: 1rem;
+                        }
+                    }
+                }
+                .verde {
+                    padding: 0 6rem;
+                    height: 320px;
+                    .bp {
+                        p {
+                            line-height: 28px;
+                            padding: 1.5rem 4rem 1.5rem 0;
+                        }
+                        button {
+                            margin: 1rem;
+                            border-radius: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+
+/*DESKTOP 2*/
+
+    .deskworkshop {
+        div {
+            button{
+                width: 31rem;
+                a:hover {
+                    width: 33rem;
+                }
+            }
+
+        }   
+    }   
+
+/*DESKTOP 4*/
+.contactodesk4 {
+    .contactanosDescripcion {
+        h2 {
+            font-size: 37px;
+        }
+        p {
+            padding-right: 3.5rem;
+        }
+        h4 {
+            font-size: 22px;
+        }
+    }
+    .formulario {
+        form {
+            div {
+                label {
+                    input {
+                        font-size: 22px;
+                    }
+                    }
+                textarea {
+                        font-size: 22px;
+                        width: 36rem;
+                        }
+                & ::placeholder{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+}

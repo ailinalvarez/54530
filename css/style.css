@@ -1,0 +1,1450 @@
+/*
+        dark brown: #3B130B
+        brown #B07062
+        green: #5F7161
+        amarillito: #FEFAE0
+        clarito: #F0ECE2 
+
+        variable es un espacio de memoria, para alojar un dato, en este caso valores de propiedades de CSS.
+        $nombre 
+        
+*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/* font-family: 'Raleway', sans-serif;*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; }
+
+header {
+  width: 100%;
+  background-color: #B07062;
+  list-style: none;
+  padding: 0.5rem 7rem 0.5rem 5rem; }
+  header section {
+    display: grid;
+    grid-template-columns: 20% 30% 15% 35%;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "bsimple bpbp  aside bn";
+    gap: 1px; }
+    header section .simple {
+      padding: 1rem 0;
+      letter-spacing: 1px;
+      font-size: 47px;
+      color: #F0ECE2;
+      grid-area: bsimple; }
+      header section .simple a {
+        color: #F0ECE2;
+        text-decoration: none; }
+      header section .simple h3 {
+        font-weight: 200; }
+    header section .barraplant {
+      color: #F0ECE2;
+      padding: 1em 0;
+      letter-spacing: 1px;
+      grid-area: bpbp; }
+      header section .barraplant h4 em {
+        padding: 2px 0;
+        font-size: 20px;
+        font-weight: 350; }
+      header section .barraplant h5, header section .barraplant h5 span {
+        padding: 2px 0;
+        font-size: 20px;
+        font-weight: 350; }
+        header section .barraplant h5 span {
+          font-weight: 100; }
+    header section .iconos {
+      grid-area: bn; }
+      header section .iconos nav ul {
+        width: 100%;
+        display: flex;
+        gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        list-style-type: none; }
+        header section .iconos nav ul .search form label {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center;
+          padding-left: 1rem; }
+          header section .iconos nav ul .search form label input {
+            display: flex;
+            color: #FEFAE0;
+            background-color: #3B130B30;
+            border: 2px solid #FEFAE041;
+            border-radius: 1em;
+            margin-right: 1rem;
+            width: 13rem;
+            height: 55px;
+            font-size: 20px;
+            align-self: center; }
+            header section .iconos nav ul .search form label input:focus {
+              outline-color: #B07062;
+              border: 3px solid #FEFAE0;
+              box-shadow: #F0ECE2;
+              background-color: #F0ECE2;
+              color: #3B130B; }
+
+main .hero {
+  width: 100%; }
+  main .hero .cookies {
+    width: 100%;
+    height: 40rem;
+    background-image: url(../assets/fotos/index/browniecookie.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  main .hero .titulos {
+    height: 350px;
+    background-color: #5F7161;
+    color: #FEFAE0;
+    border: 5rem;
+    padding: 4rem;
+    font-size: 2rem;
+    text-align: center; }
+    main .hero .titulos h1 {
+      letter-spacing: 5px;
+      margin-bottom: 1rem;
+      font-size: 90px;
+      font-weight: 250; }
+    main .hero .titulos h2 {
+      font-weight: 400;
+      font-size: 60px;
+      padding: 1rem; }
+  main .hero .chocotorta {
+    width: 100%;
+    height: 100rem;
+    background-image: url(../assets/fotos/index/chocotorta.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+    main .hero .chocotorta .botones {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center; }
+  main .hero .frase {
+    color: #FEFAE0;
+    background-color: #3B130B;
+    padding: 4rem 15rem;
+    letter-spacing: 2px;
+    text-align: center; }
+    main .hero .frase h2 {
+      font-weight: 300;
+      font-style: italic;
+      line-height: 3rem; }
+  main .hero .conocenos, main .hero .workshops, main .hero .contactanos, main .hero .catering {
+    display: flex;
+    background-color: #FEFAE0;
+    color: #3B130B;
+    padding: 0 7rem;
+    width: 100%;
+    height: 322px; }
+    main .hero .conocenos div img, main .hero .workshops div img, main .hero .contactanos div img, main .hero .catering div img {
+      width: 580px;
+      height: 100%; }
+    main .hero .conocenos .bp, main .hero .workshops .bp, main .hero .contactanos .bp, main .hero .catering .bp {
+      max-height: 322px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      main .hero .conocenos .bp p, main .hero .workshops .bp p, main .hero .contactanos .bp p, main .hero .catering .bp p {
+        overflow: hidden;
+        padding: 1.5rem 0 1rem 5rem;
+        line-height: 1.5em;
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-align: justify; }
+  main .hero .workshops, main .hero .contactanos {
+    background-color: #5F7161;
+    color: #F0ECE2; }
+    main .hero .workshops .bp p, main .hero .contactanos .bp p {
+      padding: 1.5rem 5rem 1rem 0;
+      font-weight: 300; }
+
+.deskconocenos {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  line-height: 1.5rem;
+  flex-direction: row; }
+  .deskconocenos .Somos, .deskconocenos .Elegir {
+    height: 70rem;
+    background-image: url(../assets/fotos/otras-paginas/desktop2-1.jpg);
+    background-repeat: no-repeat;
+    color: #3B130B;
+    background-size: cover; }
+    .deskconocenos .Somos article, .deskconocenos .Elegir article {
+      width: 100%;
+      text-align: center;
+      padding: 4rem;
+      font-size: 24px;
+      font-weight: 200; }
+      .deskconocenos .Somos article h2, .deskconocenos .Elegir article h2 {
+        padding-bottom: 3rem;
+        font-size: 45px;
+        font-weight: 500;
+        letter-spacing: 2px; }
+      .deskconocenos .Somos article p, .deskconocenos .Elegir article p {
+        line-height: 2rem;
+        letter-spacing: 1px;
+        font-weight: 300; }
+  .deskconocenos .Elegir {
+    padding-top: 6rem;
+    background-image: url(../assets/fotos/otras-paginas/desktop2-2.jpg); }
+
+.deskworkshop {
+  color: #3B130B;
+  background-image: url(../assets/fotos/otras-paginas/desktop3.jpg);
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 4rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap; }
+  .deskworkshop h2 {
+    padding-bottom: 3rem;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 3px; }
+
+.deskcatering {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/fotos/otras-paginas/desktop4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #F0ECE2;
+  text-align: center;
+  padding: 3rem; }
+  .deskcatering h2 {
+    padding: 4rem 0 40rem 0;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 600;
+    letter-spacing: 3px; }
+
+.contactodesk4 {
+  display: flex;
+  background-image: linear-gradient(to bottom, #f0ece2, #f4efe1, #f8f3e1, #fbf6e0, #fefae0);
+  color: #3B130B;
+  line-height: 1.5rem;
+  padding: 4.5rem 5rem; }
+  .contactodesk4 .contactanosDescripcion h2 {
+    font-size: 40px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column; }
+  .contactodesk4 .contactanosDescripcion p {
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 1.5rem 8rem 1rem 1rem;
+    line-height: 1.5em; }
+  .contactodesk4 .contactanosDescripcion h4 {
+    font-size: 24px;
+    font-weight: 450;
+    padding-top: 1rem; }
+  .contactodesk4 .formulario:focus {
+    outline-color: #5F7161; }
+  .contactodesk4 .formulario form div {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px; }
+    .contactodesk4 .formulario form div label input {
+      font-size: 24px;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      background-color: #5F7161;
+      color: #FEFAE0;
+      border-radius: 1rem; }
+      .contactodesk4 .formulario form div label input:focus {
+        outline-color: #5F7161; }
+    .contactodesk4 .formulario form div .apellido, .contactodesk4 .formulario form div .email {
+      padding-left: 8rem; }
+    .contactodesk4 .formulario form div textarea {
+      width: 38rem;
+      height: 18rem;
+      font-size: 24px;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      background-color: #5F7161;
+      color: #FEFAE0;
+      border-radius: 1rem;
+      outline-color: #5F7161; }
+    .contactodesk4 .formulario form div ::placeholder {
+      font-size: 24px;
+      padding: 1rem;
+      margin-top: 1.5rem;
+      background-color: #5F7161;
+      color: #FEFAE0; }
+
+.mapa {
+  padding: 0; }
+  .mapa iframe {
+    background-color: #F0ECE2; }
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "ftitulos fdatos ficonos";
+  gap: 3px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-color: #B07062;
+  color: #F0ECE2;
+  padding: 2rem 0 0.5rem 7rem;
+  letter-spacing: 1px;
+  justify-content: space-evenly; }
+  footer .footerTitulos {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "simple" "pbp" "ailin";
+    gap: 2px;
+    grid-area: ftitulos;
+    line-height: 0.5rem;
+    row-gap: 20px;
+    font-size: 19px;
+    margin-bottom: 10px; }
+    footer .footerTitulos h4 {
+      font-size: 25px;
+      font-weight: 300;
+      grid-area: simple; }
+      footer .footerTitulos h4 a {
+        text-decoration: none;
+        color: #F0ECE2; }
+    footer .footerTitulos h5, footer .footerTitulos header section .barraplant h5 span, header section .barraplant h5 footer .footerTitulos span {
+      font-weight: 200;
+      grid-area: pbp; }
+    footer .footerTitulos .failin {
+      grid-area: ailin; }
+  footer .footerDatos {
+    grid-area: fdatos;
+    font-weight: 100;
+    line-height: 0.5rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr); }
+  footer .footerIconos ul {
+    grid-area: ficonos;
+    padding-right: 7rem;
+    list-style: none;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center; }
+    footer .footerIconos ul li {
+      display: flex;
+      align-self: center; }
+      footer .footerIconos ul li a img {
+        width: 37px; }
+
+.chocotorta .botones div button {
+  width: 20rem;
+  height: 22rem;
+  background-color: #FEFAE0;
+  border-radius: 4em;
+  border-color: #FEFAE0;
+  padding: 40px;
+  color: #3B130B;
+  margin-top: 8rem;
+  margin: 8rem 0.5rem 0 0;
+  font-size: 20px;
+  transition: 0.2s; }
+  .chocotorta .botones div button a {
+    text-decoration: none; }
+    .chocotorta .botones div button a img {
+      object-fit: contain;
+      width: 100%;
+      height: 95%; }
+    .chocotorta .botones div button a h2 {
+      display: none; }
+
+.chocotorta .botones div :hover {
+  justify-content: center; }
+  .chocotorta .botones div :hover h2 {
+    display: block;
+    font-size: 40px;
+    font-weight: 700;
+    color: #3B130B;
+    text-align: center; }
+  .chocotorta .botones div :hover img {
+    display: none; }
+
+.conocenos .bp button, .workshops .bp button, .contactanos .bp button, .catering .bp button {
+  /* margin-top: 1rem; */
+  background-color: #5F7161;
+  border-radius: 18px;
+  text-decoration: none;
+  padding: auto;
+  width: 10rem;
+  height: 3rem;
+  font-size: 19px;
+  align-self: center; }
+  .conocenos .bp button a, .workshops .bp button a, .contactanos .bp button a, .catering .bp button a {
+    text-decoration: none;
+    color: #FEFAE0;
+    text-align: center;
+    font-weight: 400; }
+
+.conocenos .bp :hover, .workshops .bp :hover, .contactanos .bp :hover, .catering .bp :hover {
+  transform: scale(1.05); }
+
+.workshops .bp button, .contactanos .bp button {
+  background-color: #FEFAE0; }
+  .workshops .bp button a, .contactanos .bp button a {
+    color: #3B130B;
+    font-weight: 550; }
+
+.deskworkshop button {
+  background-color: rgba(95, 113, 97, 0.7);
+  color: #FEFAE0;
+  width: 33rem;
+  height: 9rem;
+  transition: 0.2s;
+  border-radius: 2rem;
+  margin: 3rem;
+  font-size: 30px;
+  border: none; }
+  .deskworkshop button a {
+    color: #FEFAE0;
+    text-decoration: none; }
+  .deskworkshop button:hover {
+    width: 36rem;
+    height: 11rem;
+    font-size: 40px;
+    font-weight: 450; }
+
+.deskcatering section .Arriba, .deskcatering section .Abajo {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  padding: 0.5rem 0;
+  border-style: none; }
+  .deskcatering section .Arriba button, .deskcatering section .Abajo button {
+    height: 6rem;
+    width: 25rem;
+    margin: 15px;
+    border-radius: 2rem;
+    font-size: 33px;
+    background-color: rgba(240, 236, 226, 0.894);
+    transition: width 0.1s, height 0.2s; }
+    .deskcatering section .Arriba button a, .deskcatering section .Abajo button a {
+      text-decoration: none;
+      color: #3B130B; }
+    .deskcatering section .Arriba button:hover, .deskcatering section .Abajo button:hover {
+      transform: scale(1.1); }
+
+.deskcatering section .Abajo button {
+  background-color: rgba(59, 19, 11, 0.838); }
+  .deskcatering section .Abajo button a {
+    color: #F0ECE2; }
+
+.contactodesk4 .formulario form .enviar input {
+  width: 10rem;
+  height: 4rem;
+  color: #FEFAE0;
+  background-color: #5F7161;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+  font-size: 22px; }
+
+@media (max-width: 1440px) {
+  body header section {
+    grid-template-columns: 20% 30% 5% 45%; }
+    body header section .simple h3 {
+      font-size: 45px; }
+    body header section .barraplant h4 em {
+      padding-left: 23px;
+      font-weight: 300;
+      font-size: 18px; }
+    body header section .barraplant h5 i strong, body header section .barraplant h5 span strong {
+      padding-left: 20px;
+      font-size: 18px; }
+    body header section .barraplant h5 span {
+      font-weight: 300; }
+    body header section .iconos nav ul {
+      padding-left: 3rem;
+      justify-content: end; }
+      body header section .iconos nav ul li form label img {
+        width: 37px; }
+      body header section .iconos nav ul li a img {
+        width: 37px; }
+  body main .hero .titulos {
+    height: 320px; }
+    body main .hero .titulos h1 {
+      font-size: 85px; }
+    body main .hero .titulos h2 {
+      font-size: 57px; }
+  body main .hero .chocotorta {
+    height: 94rem; }
+    body main .hero .chocotorta .botones div button {
+      padding: 30px;
+      width: 18rem;
+      height: 20rem;
+      border-radius: 4.5rem; }
+    body main .hero .chocotorta .botones div :hover h2 {
+      font-size: 37px;
+      font-weight: 600; }
+  body main .hero .frase {
+    padding: 3rem 10rem; }
+  body main .hero .secciones {
+    padding: 0 6rem;
+    height: 320px; }
+    body main .hero .secciones .bp p {
+      line-height: 28px;
+      padding: 1.5rem 0 1.5rem 4rem; }
+    body main .hero .secciones .bp button {
+      margin: 1rem;
+      border-radius: 1rem; }
+  body main .hero .verde {
+    padding: 0 6rem;
+    height: 320px; }
+    body main .hero .verde .bp p {
+      line-height: 28px;
+      padding: 1.5rem 4rem 1.5rem 0; }
+    body main .hero .verde .bp button {
+      margin: 1rem;
+      border-radius: 1rem; }
+  /*DESKTOP 2*/
+  .deskworkshop div button {
+    width: 31rem; }
+    .deskworkshop div button a:hover {
+      width: 33rem; }
+  /*DESKTOP 4*/
+  .contactodesk4 .contactanosDescripcion h2 {
+    font-size: 37px; }
+  .contactodesk4 .contactanosDescripcion p {
+    padding-right: 3.5rem; }
+  .contactodesk4 .contactanosDescripcion h4 {
+    font-size: 22px; }
+  .contactodesk4 .formulario form div label input {
+    font-size: 22px; }
+  .contactodesk4 .formulario form div textarea {
+    font-size: 22px;
+    width: 36rem; }
+  .contactodesk4 .formulario form div ::placeholder {
+    font-size: 22px; } }
+
+@media (max-width: 1270px) {
+  body header section {
+    grid-template-columns: 20% 30% 10% 40%; }
+    body header section .iconos nav ul li form label input {
+      width: 13rem;
+      height: 3rem; }
+    body header section .iconos nav ul li form label img {
+      width: 35px; }
+    body header section .iconos nav ul li a img {
+      width: 35px; }
+  body main .hero .cookies {
+    height: 35rem; }
+  body main .hero .titulos {
+    height: 300px; }
+    body main .hero .titulos h1 {
+      letter-spacing: 4px;
+      margin: 0; }
+    body main .hero .titulos h2 {
+      font-size: 55px; }
+  body main .hero .chocotorta {
+    height: 85rem; }
+    body main .hero .chocotorta .botones div button {
+      width: 15rem;
+      height: 18rem;
+      border-radius: 4rem;
+      padding: 20px; }
+    body main .hero .chocotorta .botones div :hover h2 {
+      font-size: 34px;
+      font-weight: 550; }
+  body main .hero .secciones img {
+    width: 490px; }
+  body footer .footerIconos ul li a img {
+    width: 35px; }
+  /*DESK 1*/
+  .deskconocenos {
+    height: 100%;
+    background-image: url(../assets/fotos/otras-paginas/desktop2-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    .deskconocenos .desk1 {
+      background-image: none; }
+      .deskconocenos .desk1 article {
+        line-height: 3rem; }
+        .deskconocenos .desk1 article h2 {
+          padding-bottom: 2rem;
+          font-size: 45px;
+          font-weight: 500; }
+        .deskconocenos .desk1 article p {
+          font-size: 24px; }
+    .deskconocenos .Elegir {
+      padding-top: 4rem; }
+  /* DESK 4 */
+  .contactodesk4 .contactanosDescripcion p {
+    padding-right: 1rem; }
+  .contactodesk4 .formulario form div {
+    justify-content: space-evenly; }
+    .contactodesk4 .formulario form div label input {
+      width: 13.5rem;
+      height: 3.5rem; }
+    .contactodesk4 .formulario form div textarea {
+      margin-left: 0.5rem;
+      width: 32.5rem;
+      height: 17rem;
+      padding: 0; }
+    .contactodesk4 .formulario form div .der {
+      padding-left: 2rem; }
+  .mapa iframe {
+    height: 33rem; } }
+
+@media (max-width: 1118px) {
+  body header {
+    padding-left: 4.5rem;
+    padding-right: 5.5rem; }
+    body header section .simple h3 {
+      font-size: 42px; }
+    body header section .simple a h3 {
+      font-size: 42px; }
+    body header section .barraplant h4 em {
+      font-size: 16px;
+      margin-left: 10px; }
+    body header section .barraplant h5, body header section .barraplant h5 span {
+      font-size: 16px;
+      margin-left: 10px; }
+      body header section .barraplant h5 span {
+        margin: 3px; }
+    body header section .iconos {
+      justify-content: flex-end; }
+      body header section .iconos nav ul li form label img {
+        width: 33px; }
+      body header section .iconos nav ul li a img {
+        width: 33px; }
+  body main .hero .titulos {
+    height: 290px; }
+    body main .hero .titulos h1 {
+      font-size: 82px; }
+    body main .hero .titulos h2 {
+      font-size: 54px; }
+  body main .hero .chocotorta {
+    height: 75rem; }
+    body main .hero .chocotorta .botones div button a img {
+      height: 80%;
+      width: auto; }
+  body footer {
+    grid-template-columns: 25% 50% 25%; }
+    body footer .footerDatos {
+      justify-content: center; }
+    body footer .footerIconos {
+      justify-content: space-around; }
+      body footer .footerIconos ul li a img {
+        width: 33px; }
+  /*DESK 3*/
+  .deskcatering {
+    overflow: hidden;
+    height: 100%; }
+    .deskcatering h2 {
+      padding: 1.5rem 0 34rem 0;
+      font-size: 67px;
+      letter-spacing: 2px; }
+    .deskcatering section div button {
+      height: 5rem;
+      width: 20rem;
+      border-radius: 2rem;
+      font-size: 30px; }
+  /*DESK 4*/
+  .contactodesk4 {
+    padding: 3rem 3.5rem; }
+    .contactodesk4 .contactanosDescripcion h2 {
+      font-size: 38px;
+      font-weight: 500;
+      padding: 1rem; }
+    .contactodesk4 .contactanosDescripcion h4 {
+      font-size: 22px;
+      font-weight: 450;
+      padding-top: 0.5rem; }
+    .contactodesk4 .contactanosDescripcion p {
+      line-height: 26px; }
+    .contactodesk4 .formulario form div label input {
+      font-size: 21px; }
+    .contactodesk4 .formulario form div textarea {
+      font-size: 21px; }
+    .contactodesk4 .formulario form div ::placeholder {
+      font-size: 21px; } }
+
+@media (max-width: 1024px) {
+  body header {
+    padding-left: 3rem;
+    padding-right: 4rem; }
+    body header section {
+      grid-template-columns: 20% 40% 40%;
+      grid-template-areas: "bsimple bpbp bn"; }
+      body header section .simple a h3 {
+        font-size: 40px; }
+      body header section .simple h3 {
+        font-size: 40px; }
+      body header section .barraplant h4 {
+        font-weight: 350; }
+      body header section .barraplant h5, body header section .barraplant h5 span {
+        font-weight: 350; }
+      body header section .iconos nav ul {
+        padding-left: 1rem;
+        margin-bottom: 1rem; }
+        body header section .iconos nav ul .search form label input {
+          width: 10rem;
+          height: 3rem; }
+        body header section .iconos nav ul .search form label img {
+          width: 31px; }
+        body header section .iconos nav ul li a img {
+          width: 31px; }
+  body main .hero .cookies {
+    height: 32rem; }
+  body main .hero .titulos h1 {
+    font-size: 79px; }
+  body main .hero .titulos h2 {
+    font-size: 52px; }
+  body main .hero .chocotorta {
+    width: 100%;
+    height: 65.5rem; }
+    body main .hero .chocotorta .botones div button {
+      width: 14rem;
+      height: 17rem; }
+      body main .hero .chocotorta .botones div button a img {
+        width: 92%; }
+    body main .hero .chocotorta .botones div :hover h2 {
+      font-size: 32px;
+      font-weight: 550; }
+  body main .hero .frase {
+    padding: 2rem 7rem; }
+    body main .hero .frase h2 {
+      line-height: 2.5rem; }
+  body main .hero .secciones {
+    padding: 0 5rem;
+    height: 270px; }
+    body main .hero .secciones div img {
+      display: none; }
+    body main .hero .secciones .bp p {
+      padding: 1rem 3rem;
+      font-size: 21px;
+      text-align: center; }
+    body main .hero .secciones .bp button {
+      height: 3rem;
+      margin: 1rem;
+      border-radius: 19px; }
+      body main .hero .secciones .bp button a {
+        font-size: 21px; }
+  body footer {
+    padding-left: 4rem; }
+    body footer .footerIconos ul li a img {
+      width: 31px; }
+  /*DESKTOP 1*/
+  .deskconocenos .desk1 article h2 {
+    padding-bottom: 1.5rem;
+    font-size: 43px;
+    font-weight: 500; }
+  .deskconocenos .desk1 article p {
+    font-size: 22px; }
+  .deskconocenos .Elegir {
+    padding-top: 3rem; }
+  /*DESK 2*/
+  .deskworkshop {
+    padding: 3rem; }
+    .deskworkshop h2 {
+      padding-bottom: 0;
+      margin-bottom: 0;
+      font-size: 67px;
+      font-weight: 600;
+      letter-spacing: 2.5px; }
+    .deskworkshop div button {
+      width: 26rem;
+      height: 7rem;
+      margin: 2rem; }
+      .deskworkshop div button a {
+        font-size: 27px; }
+      .deskworkshop div button:hover {
+        width: 28rem;
+        height: 8.5rem;
+        font-size: 32px;
+        font-weight: 400; }
+  /*Desktop 3*/
+  .deskcatering {
+    background-size: cover;
+    justify-content: center; }
+    .deskcatering h2 {
+      padding: 2rem 0 33rem 0;
+      font-size: 67px;
+      font-weight: 550;
+      letter-spacing: 2px; }
+    .deskcatering section div button {
+      height: 5rem;
+      width: 19rem;
+      border-radius: 1.5rem;
+      font-size: 30px; }
+  /*DESKTOP 4*/
+  .contactodesk4 .contactanosDescripcion h4 {
+    font-size: 21px;
+    padding-top: 0rem; }
+  .contactodesk4 .formulario form div label input {
+    width: 12rem;
+    height: 3rem;
+    font-size: 20px;
+    padding: 0.5rem;
+    border-radius: 1rem; }
+  .contactodesk4 .formulario form div textarea {
+    width: 27rem;
+    height: 15rem;
+    font-size: 20px;
+    padding: 0.5rem;
+    border-radius: 1rem; }
+  .contactodesk4 .formulario form div input {
+    height: 3rem; }
+  .contactodesk4 .formulario form div ::placeholder {
+    font-size: 20px;
+    padding: 0.5rem;
+    border-radius: 1rem; }
+  .mapa iframe {
+    height: 450px; } }
+
+@media (max-width: 950px) {
+  body header {
+    padding-left: 2rem;
+    padding-right: 3rem; }
+  body main .hero .cookies {
+    height: 29rem; }
+  body main .hero .titulos {
+    height: 260px;
+    padding: 2rem; }
+    body main .hero .titulos h1 {
+      font-size: 78px;
+      letter-spacing: 3px; }
+    body main .hero .titulos h2 {
+      font-size: 50px; }
+  body main .hero .chocotorta {
+    height: 60rem; }
+    body main .hero .chocotorta .botones {
+      justify-content: space-evenly; }
+      body main .hero .chocotorta .botones div button {
+        border-radius: 3rem;
+        height: 15rem;
+        width: 13rem;
+        padding: 15px; }
+  body main .hero .secciones {
+    height: 250px; }
+    body main .hero .secciones .bp p {
+      padding: 1rem 2rem;
+      font-size: 20px; }
+    body main .hero .secciones .bp button {
+      border-radius: 20px; }
+  body footer {
+    padding: 1.5rem 0 0.5rem 3rem; }
+    body footer .footerDatos p {
+      font-size: 15px; }
+    body footer .footerIconos ul {
+      padding-right: 5rem; }
+      body footer .footerIconos ul li a img {
+        width: 28px; }
+  /*DESK 1*/
+  .deskconocenos .desk1 {
+    padding: 1.5rem; }
+    .deskconocenos .desk1 article h2 {
+      font-size: 39px;
+      font-weight: 550;
+      letter-spacing: 1px; }
+    .deskconocenos .desk1 article p {
+      font-size: 20px;
+      line-height: 27px;
+      font-weight: 400; }
+  .deskconocenos .Elegir {
+    padding-top: 1.5rem; }
+  /*DESK 3*/
+  .deskcatering h2 {
+    padding: 2rem 0 27rem 0;
+    font-size: 65px;
+    font-weight: 600;
+    letter-spacing: 1px; }
+  .deskcatering section div button {
+    height: 4rem;
+    width: 18rem; }
+    .deskcatering section div button a {
+      font-size: 30px;
+      font-weight: 500; }
+  /*DESK 4*/
+  .contactodesk4 {
+    flex-direction: column;
+    align-items: flex-start; }
+    .contactodesk4 .formulario form div label input {
+      width: 15rem;
+      height: 3rem;
+      font-size: 22px; }
+    .contactodesk4 .formulario form div textarea {
+      font-size: 22px;
+      width: 35rem; }
+    .contactodesk4 .formulario form div ::placeholder {
+      font-size: 22px; } }
+
+@media (max-width: 768px) {
+  body header {
+    padding-right: 2rem; }
+    body header section {
+      grid-template-columns: 22% 50% 28%;
+      grid-template-areas: "bsimple bpbp bn"; }
+      body header section .simple a h3 {
+        padding: 0;
+        font-size: 37px; }
+      body header section .simple h3 {
+        padding: 0;
+        font-size: 37px; }
+      body header section .barraplant {
+        padding-bottom: 1.5rem;
+        width: 100%;
+        display: flex;
+        align-items: end;
+        letter-spacing: 0;
+        font-weight: 250;
+        justify-content: center; }
+        body header section .barraplant h4 em {
+          padding: 0;
+          font-size: 15px;
+          margin: 0; }
+        body header section .barraplant h5, body header section .barraplant h5 span {
+          margin-left: 1rem;
+          font-size: 15px;
+          padding: 0; }
+          body header section .barraplant h5 i strong, body header section .barraplant h5 span strong {
+            font-size: 15px;
+            padding: 0; }
+          body header section .barraplant h5 span {
+            padding: 0;
+            margin: 0; }
+    body header .iconos nav ul {
+      padding-left: 0; }
+      body header .iconos nav ul .search form label input {
+        display: none; }
+  body main .hero .cookies {
+    display: none; }
+  body main .hero .titulos {
+    height: 230px;
+    padding: 1.5rem; }
+    body main .hero .titulos h1 {
+      font-size: 73px; }
+    body main .hero .titulos h2 {
+      font-size: 47px; }
+  body main .hero .chocotorta {
+    background-image: url(../assets/fotos/index/chocotor.jpg); }
+    body main .hero .chocotorta .botones div button {
+      margin: 2rem;
+      width: 15rem;
+      height: 16rem;
+      margin-top: 2rem;
+      padding: 16px; }
+      body main .hero .chocotorta .botones div button img {
+        height: 80%; }
+  body main .hero .frase {
+    padding: 2.5rem 4rem; }
+    body main .hero .frase h2 {
+      line-height: 2rem;
+      font-size: 21px; }
+  body main .hero .secciones {
+    padding: 0.5rem 1rem;
+    height: 220px; }
+    body main .hero .secciones .bp p {
+      padding: 1rem;
+      font-size: 18px;
+      font-weight: 400; }
+    body main .hero .secciones .bp button {
+      height: 2.5rem;
+      margin: 0.5rem; }
+  body footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat 1, 1fr;
+    grid-template-areas: "ftitulos ficonos";
+    gap: 3px; }
+    body footer .footerDatos {
+      display: none; }
+    body footer .footerIconos {
+      display: flex;
+      align-items: top;
+      justify-content: flex-end; }
+      body footer .footerIconos ul {
+        align-self: start; }
+  /*DESK 1*/
+  .deskconocenos {
+    background-position: center; }
+    .deskconocenos .desk1 article {
+      line-height: 2.5rem;
+      padding: 1rem; }
+      .deskconocenos .desk1 article h2 {
+        font-size: 35px;
+        font-weight: 600;
+        padding-bottom: 1rem; }
+      .deskconocenos .desk1 article p {
+        line-height: 25px; }
+  /*DESK 2*/
+  .deskworkshop {
+    padding: 2.5rem; }
+    .deskworkshop h2 {
+      font-size: 64px;
+      letter-spacing: 2px; }
+    .deskworkshop div button {
+      width: 24rem;
+      height: 6.5rem;
+      margin: 1.5rem;
+      transition: 0.2s;
+      background-color: #3b130bcf; }
+      .deskworkshop div button a {
+        font-size: 25px;
+        color: #F0ECE2; }
+      .deskworkshop div button :hover {
+        width: 26rem;
+        height: 7.5rem;
+        font-size: 30px; }
+  /*DESK 3*/
+  .deskcatering h2 {
+    padding: 2rem 0 23rem 0;
+    font-size: 64px; }
+  .deskcatering section {
+    gap: 3rem; }
+    .deskcatering section div button {
+      height: 4.5rem;
+      width: 16rem;
+      font-size: 26px; }
+  /*DESK 4*/
+  .contactodesk4 {
+    padding: 3rem; } }
+
+@media (max-width: 650px) {
+  body header section {
+    grid-template-columns: 25% 50% 25%; }
+    body header section .barraplant {
+      padding-bottom: 15px;
+      align-items: flex-end;
+      padding-bottom: 22px;
+      margin-left: 1rem; }
+      body header section .barraplant h4 em {
+        font-size: 16px;
+        font-weight: 250;
+        gap: 1em; }
+      body header section .barraplant h5, body header section .barraplant h5 span {
+        font-size: 16px;
+        font-weight: 250;
+        gap: 1em; }
+    body header section .iconos nav ul {
+      margin-top: 1rem;
+      margin-bottom: 0;
+      padding: 0; }
+      body header section .iconos nav ul li {
+        justify-content: center;
+        padding-top: 5px; }
+      body header section .iconos nav ul .search {
+        display: none; }
+      body header section .iconos nav ul .shopping {
+        display: none; }
+  body main .hero .titulos h1 {
+    font-size: 69px; }
+  body main .hero .titulos h2 {
+    font-size: 43px; }
+  /*DESK 3*/
+  .deskcatering {
+    background-position: center; }
+    .deskcatering h2 {
+      padding-bottom: 5rem;
+      padding-top: 1rem;
+      font-size: 62px; }
+    .deskcatering section .catering, .deskcatering section main .hero .workshops, main .hero .deskcatering section .workshops, .deskcatering section main .hero .contactanos, main .hero .deskcatering section .contactanos {
+      gap: 1em;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center; }
+      .deskcatering section .catering button, .deskcatering section main .hero .workshops button, main .hero .deskcatering section .workshops button, .deskcatering section main .hero .contactanos button, main .hero .deskcatering section .contactanos button {
+        font-weight: 500;
+        width: 20rem; }
+        .deskcatering section .catering button a, .deskcatering section main .hero .workshops button a, main .hero .deskcatering section .workshops button a, .deskcatering section main .hero .contactanos button a, main .hero .deskcatering section .contactanos button a {
+          font-size: 27px; } }
+
+@media (max-width: 620px) {
+  body header section .barraplant {
+    justify-content: start;
+    margin-right: 0.5rem; }
+    body header section .barraplant h4 {
+      display: none; }
+    body header section .barraplant h5, body header section .barraplant h5 span {
+      margin-left: 1rem;
+      font-size: 20px; }
+      body header section .barraplant h5 i strong, body header section .barraplant h5 span strong {
+        font-size: 20px;
+        font-weight: 800; }
+      body header section .barraplant h5 span {
+        margin: 5px; }
+  body main .hero .titulos {
+    height: 220px; }
+    body main .hero .titulos h1 {
+      letter-spacing: 2px;
+      font-size: 67px; }
+    body main .hero .titulos h2 {
+      font-size: 40px; }
+  body main .hero .chocotorta {
+    height: 39rem; }
+    body main .hero .chocotorta .botones div button {
+      width: 13rem;
+      height: 14rem; }
+      body main .hero .chocotorta .botones div button img {
+        height: auto; }
+    body main .hero .chocotorta .botones div :hover h2 {
+      font-size: 30px;
+      font-weight: 550; }
+  body main .hero .frase h2 {
+    font-size: 19px; }
+  body main .hero .secciones .bp p {
+    font-size: 17px; }
+  /*DESK 1*/
+  .deskconocenos .desk1 article h2 {
+    font-size: 32px; }
+  .deskconocenos .desk1 article p {
+    font-size: 18px;
+    line-height: 23px; }
+  /*desk 2*/
+  .deskworkshop {
+    background-position: center; }
+    .deskworkshop h2 {
+      font-size: 58px;
+      font-weight: 500; }
+    .deskworkshop div button {
+      width: 21rem;
+      height: 6.0rem;
+      transition: 0.2s; }
+      .deskworkshop div button :hover {
+        width: 23rem;
+        height: 7rem;
+        font-size: 28px; }
+  /*desk 4*/
+  .contactodesk4 {
+    padding: 1.5rem; }
+    .contactodesk4 .contactanosDescripcion h2 {
+      font-size: 34px; }
+    .contactodesk4 .contactanosDescripcion h4 {
+      font-size: 20px; }
+    .contactodesk4 .contactanosDescripcion p {
+      line-height: 22px;
+      font-size: 18px; }
+    .contactodesk4 .formulario form div label input {
+      width: 13rem;
+      height: 3rem;
+      font-size: 20px; }
+    .contactodesk4 .formulario form div textarea {
+      width: 31rem;
+      font-size: 20px; }
+    .contactodesk4 .formulario form div ::placeholder {
+      font-size: 20px; } }
+
+@media (max-width: 550px) {
+  body header section {
+    grid-template-columns: 35% 45% 25%; }
+    body header section .barraplant {
+      margin: 0; }
+      body header section .barraplant h5, body header section .barraplant h5 span {
+        margin-left: 1rem;
+        font-size: 18px; }
+        body header section .barraplant h5 i strong, body header section .barraplant h5 span strong {
+          font-size: 18px;
+          font-weight: 800; }
+        body header section .barraplant h5 span {
+          margin: 3px; }
+  body main .hero .titulos {
+    height: 180px; }
+    body main .hero .titulos h1 {
+      font-size: 62px; }
+    body main .hero .titulos h2 {
+      font-size: 35px; }
+  body main .hero .chocotorta {
+    height: 35rem; }
+    body main .hero .chocotorta .botones {
+      justify-content: space-evenly; }
+      body main .hero .chocotorta .botones div button {
+        width: 11rem;
+        height: 11.5rem;
+        padding: 10px;
+        margin: 16px; }
+      body main .hero .chocotorta .botones div :hover h2 {
+        font-size: 26px; }
+  body main .hero .frase {
+    display: none; }
+  body main .hero .secciones {
+    height: 225px; }
+    body main .hero .secciones .bp p {
+      font-size: 16px; }
+    body main .hero .secciones .bp button {
+      margin: 0.5rem; }
+      body main .hero .secciones .bp button a {
+        font-size: 18px; }
+  /*DESK 1*/
+  .deskconocenos {
+    flex-direction: column;
+    background-size: cover;
+    height: 100%; }
+    .deskconocenos .desk1 {
+      height: 15rem;
+      padding: 1rem 3rem;
+      margin-bottom: 5rem; }
+      .deskconocenos .desk1 article h2 {
+        font-size: 30px;
+        font-weight: 400px;
+        padding-bottom: 1rem;
+        line-height: 2rem; }
+      .deskconocenos .desk1 article p {
+        font-size: 18px;
+        line-height: 25px; }
+    .deskconocenos .Elegir {
+      height: 25rem;
+      padding: 1rem 2rem;
+      margin-bottom: 35rem; }
+  /*DESK 4*/
+  .contactodesk4 .formulario form div {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 20px;
+    padding: 0;
+    gap: 20px; }
+    .contactodesk4 .formulario form div label input {
+      margin: 0; }
+    .contactodesk4 .formulario form div .der {
+      padding-left: 0; }
+  .contactodesk4 .formulario form .mensaje textarea {
+    margin: 0;
+    width: 20rem; }
+  .contactodesk4 .formulario form .enviar {
+    margin: 20px;
+    width: 50%; }
+    .contactodesk4 .formulario form .enviar input {
+      margin: 0;
+      width: 7rem;
+      height: 3rem;
+      font-size: 20px; } }
+
+@media (max-width: 425px) {
+  body header {
+    padding: 0.5rem 1rem; }
+    body header section {
+      grid-template-columns: 30% 50% 20%;
+      grid-template-areas: "bsimple bpbp bn";
+      align-content: end; }
+      body header section .simple {
+        padding: 0;
+        align-self: center; }
+        body header section .simple h3 {
+          font-size: 30px;
+          padding: 0; }
+        body header section .simple a h3 {
+          font-size: 28px;
+          padding: 0; }
+      body header section .barraplant {
+        padding: 0;
+        display: flex;
+        align-self: center;
+        justify-content: center; }
+        body header section .barraplant h5, body header section .barraplant h5 span {
+          padding: 0;
+          align-self: center;
+          font-size: 15px;
+          font-weight: 200; }
+          body header section .barraplant h5 i strong, body header section .barraplant h5 span strong {
+            font-size: 15px;
+            font-weight: 600; }
+      body header section .iconos nav ul {
+        margin-top: 0;
+        align-items: center; }
+  body main .hero .titulos {
+    height: 150px; }
+    body main .hero .titulos h1 {
+      font-size: 50px;
+      letter-spacing: 0; }
+    body main .hero .titulos h2 {
+      font-size: 25px;
+      font-weight: 300; }
+  body main .hero .chocotorta {
+    background-image: none;
+    background-color: #3B130B;
+    height: 100%; }
+    body main .hero .chocotorta .botones {
+      flex-direction: column;
+      align-content: center; }
+      body main .hero .chocotorta .botones div button {
+        width: 15rem;
+        height: 11rem;
+        padding: 10px; }
+        body main .hero .chocotorta .botones div button a img {
+          height: 100%;
+          width: 85%; }
+      body main .hero .chocotorta .botones div :hover h2 {
+        font-size: 30px; }
+  body footer {
+    display: flex;
+    padding: 1.5rem 1rem; }
+    body footer .footerTitulos {
+      display: none; }
+    body footer .footerIconos {
+      margin-top: 0;
+      justify-self: center;
+      justify-content: center;
+      align-self: flex-start;
+      width: 29px; }
+      body footer .footerIconos ul {
+        padding: 0; }
+  /*DESK 1*/
+  .deskconocenos {
+    background-image: none;
+    background-color: #5F7161;
+    padding: 2rem 2.5rem;
+    height: 50rem; }
+    .deskconocenos .desk1 {
+      margin-bottom: 0;
+      height: 100%;
+      padding: 0;
+      color: #F0ECE2; }
+      .deskconocenos .desk1 article {
+        padding: 0; }
+        .deskconocenos .desk1 article h2 {
+          color: #F0ECE2; }
+        .deskconocenos .desk1 article p {
+          padding: 1rem; }
+    .deskconocenos .Elegir {
+      margin: 0; }
+  /*DESK 2*/
+  .deskworkshop {
+    background-image: none;
+    background-color: #FEFAE0;
+    height: 49rem;
+    justify-content: space-evenly;
+    padding: 1.5rem; }
+    .deskworkshop h2 {
+      font-size: 50px;
+      margin-bottom: 0; }
+    .deskworkshop div button {
+      background-color: #5F7161;
+      width: 17rem;
+      margin: 0.5rem; }
+      .deskworkshop div button a {
+        font-size: 24px;
+        font-weight: 500; }
+      .deskworkshop div button :hover {
+        width: 18rem;
+        height: 6.5rem;
+        font-size: 26px;
+        font-weight: 350; }
+  /*DESK 3*/
+  .deskcatering {
+    background-image: none;
+    background-color: #3B130B;
+    height: 49rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly; }
+    .deskcatering h2 {
+      padding: 0;
+      margin-bottom: 1.5rem;
+      font-size: 50px;
+      font-weight: 500; }
+    .deskcatering section .catering, .deskcatering section main .hero .workshops, main .hero .deskcatering section .workshops, .deskcatering section main .hero .contactanos, main .hero .deskcatering section .contactanos {
+      padding: 0;
+      justify-content: center;
+      gap: 0; }
+      .deskcatering section .catering button, .deskcatering section main .hero .workshops button, main .hero .deskcatering section .workshops button, .deskcatering section main .hero .contactanos button, main .hero .deskcatering section .contactanos button {
+        width: 16rem;
+        border-radius: 1.5rem;
+        background-color: #F0ECE2; }
+        .deskcatering section .catering button a, .deskcatering section main .hero .workshops button a, main .hero .deskcatering section .workshops button a, .deskcatering section main .hero .contactanos button a, main .hero .deskcatering section .contactanos button a {
+          font-size: 25px;
+          font-weight: 500; }
+    .deskcatering section .Abajo button a {
+      color: #3B130B; }
+  /*DESK 4*/
+  .contactodesk4 {
+    padding: 1rem; }
+    .contactodesk4 .contactanosDescripcion h2 {
+      font-size: 30px;
+      padding-bottom: 0;
+      padding-left: 0;
+      margin-bottom: 0.5rem; }
+    .contactodesk4 .contactanosDescripcion h4 {
+      font-size: 18px; }
+    .contactodesk4 .contactanosDescripcion p {
+      line-height: 20px;
+      font-size: 16px;
+      padding: 0.5rem;
+      padding-left: 1rem; }
+    .contactodesk4 .formulario form div label input {
+      width: 10rem;
+      height: 2.5rem;
+      font-size: 16px;
+      border-radius: 10px; }
+    .contactodesk4 .formulario form div label ::placeholder {
+      font-size: 16px; }
+    .contactodesk4 .formulario form .mensaje textarea {
+      font-size: 16px;
+      border-radius: 10px;
+      width: 16rem; }
+    .contactodesk4 .formulario form .mensaje ::placeholder {
+      font-size: 16px; }
+    .contactodesk4 .formulario form .enviar input {
+      font-size: 16px;
+      height: 2.5rem;
+      border-radius: 10px; } }
+
+@media (max-width: 375px) {
+  body header {
+    padding: 5px 25px 5px 10px; }
+    body header section {
+      grid-template-columns: 35% 50% 15%; }
+      body header section div a h3 {
+        font-size: 25px;
+        padding: 0;
+        justify-self: center;
+        align-self: center; }
+      body header section div h3 {
+        font-size: 25px;
+        padding: 0;
+        justify-self: center;
+        align-self: center; }
+      body header section .barraplant h5, body header section .barraplant h5 span {
+        align-self: center; }
+      body header section .iconos {
+        align-self: self-start; }
+  body main .hero .chocotorta .botones div button {
+    border-radius: 40px;
+    width: 16rem; }
+    body main .hero .chocotorta .botones div button h2 {
+      font-size: 22px; }
+    body main .hero .chocotorta .botones div button a img {
+      width: 75%; }
+  body main .hero .secciones {
+    display: none; }
+  body footer {
+    padding: 2rem; }
+  /*DESK 1*/
+  .deskconocenos {
+    height: 52rem;
+    padding: 1.5rem 2rem; }
+  /*DESK 2*/
+  .deskworkshop h2 {
+    font-size: 45px;
+    margin-bottom: 0; }
+  /*desk 3*/
+  .deskcatering {
+    padding: 1.5rem; }
+    .deskcatering h2 {
+      margin-bottom: 0;
+      font-size: 45px; } }
