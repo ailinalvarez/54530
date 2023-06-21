@@ -1,0 +1,86 @@
+
+@media (max-width:650px) {
+
+body {
+    header {
+        section {
+            grid-template-columns: 25% 50% 25%;
+            .barraplant {
+                padding-bottom: 15px;
+                align-items: flex-end;
+                padding-bottom: 22px;
+                margin-left: 1rem;
+                h4 {
+                    em {
+                        font-size: 16px;
+                        font-weight: 250;
+                        gap: 1em;
+                    }
+                }
+                h5{
+                    font-size: 16px;
+                    font-weight: 250;
+                    gap: 1em;
+                }
+            }
+            .iconos {
+                nav {
+                    ul {
+                        margin-top: 1rem;
+                        margin-bottom: 0;
+                        padding: 0;
+                        li {
+                            justify-content: center;
+                            padding-top: 5px;
+                            }
+                        .search {
+                            display: none;
+                        }
+                        .shopping {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .hero {
+            .titulos {
+                h1 {
+                    font-size: 69px;
+                } 
+                h2 {
+                    font-size: 43px;
+                }
+            }
+        }
+    }
+}
+
+        /*DESK 3*/
+
+        .deskcatering {
+            background-position: center;
+            h2 {
+                padding-bottom: 5rem;
+                padding-top: 1rem;
+                font-size: 62px;
+            }
+            section {
+                .catering {
+                    gap: 1em;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    button{
+                        font-weight: 500;
+                        width: 20rem;
+                        a{
+                            font-size: 27px;
+                        }
+                    }
+                }
+            }
+        }
+}

@@ -1,0 +1,152 @@
+
+@media (max-width:950px) {
+
+body {
+    header {
+        padding-left: 2rem;
+        padding-right: 3rem;
+    }
+    main {
+        .hero {
+            .cookies {
+                height: 29rem;
+            }
+            .titulos {
+                height: 260px;
+                padding: 2rem;
+                h1  {
+                    font-size: 78px;
+                    letter-spacing: 3px;
+                }
+                h2 {
+                    font-size: 50px;
+                }
+            }
+            .chocotorta {
+                height: 60rem;
+                .botones {
+                    justify-content: space-evenly;
+                    div {
+                        button {
+                            border-radius: 3rem;
+                            height: 15rem;
+                            width: 13rem;
+                            padding: 15px;
+                        }
+                    }
+                }
+            }
+            .secciones {
+                height: 250px;
+                .bp {
+                    p {
+                        padding: 1rem 2rem;
+                        font-size: 20px;
+                    }
+                    button {
+                        border-radius: 20px;
+                    }
+                }
+            }
+        }
+    }
+    
+    footer {
+        padding: 1.5rem 0 0.5rem 3rem;
+        .footerDatos {
+            p {
+                font-size: 15px;
+            }
+        }
+        .footerIconos {
+            ul{
+                padding-right: 5rem;
+                li {
+                    a{
+                        img {
+                            width: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+
+    /*DESK 1*/
+
+    .deskconocenos {
+        .desk1 {
+            padding: 1.5rem;
+            article {
+                h2 {
+                    font-size: 39px;
+                    font-weight: 550;
+                    letter-spacing: 1px;
+                }
+                p {
+                    font-size: 20px;
+                    line-height: 27px;
+                    font-weight: 400;
+                }
+            }
+        }
+        .Elegir {
+            padding-top: 1.5rem;
+        }
+    }
+
+
+    /*DESK 3*/
+
+    .deskcatering {
+        h2{
+        padding: 2rem 0 27rem 0;
+        font-size: 65px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        }
+        section {
+            div {
+                button{
+                    height: 4rem;
+                    width: 18rem;
+                    a{
+                        font-size: 30px;
+                        font-weight: 500;
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*DESK 4*/
+
+    .contactodesk4 {
+        flex-direction: column;
+        align-items: flex-start;
+            .formulario {
+                form {
+                    div{
+                        label {
+                            input {
+                                width: 15rem;
+                                height: 3rem;
+                                font-size: 22px;
+                            }
+                        }
+                        textarea {
+                            font-size: 22px;
+                            width: 35rem;
+                        }
+                        ::placeholder {
+                            font-size: 22px;
+                        }
+                    }
+                }
+            }
+        }
+
+}
