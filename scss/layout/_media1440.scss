@@ -1,10 +1,9 @@
 
-
 @media (max-width:1440px) {
     body {
         header{
-            section {
-                grid-template-columns: 20% 30% 5% 45%;
+            nav {
+                grid-template-columns: 20% 20% 20% 24% 7% 9%;
                 .simple {
                     h3 {
                         font-size: 45px;
@@ -28,28 +27,6 @@
                         span{
                             @extend i;
                             font-weight: 300;
-                        }
-                    }
-                }
-                .iconos {
-                    nav{
-                        ul {
-                            padding-left: 3rem;
-                            justify-content: end;
-                            li {
-                                form {
-                                    label {
-                                        img {
-                                            width:37px;
-                                        }
-                                    }
-                                }
-                                a{
-                                    img{
-                                        width:37px;
-                                    }
-                                }
-                            }
                         }
                     }
                 }

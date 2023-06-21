@@ -2,32 +2,8 @@
 @media (max-width:1270px) {
     body {
         header {
-            section {
-            grid-template-columns: 20% 30% 10% 40%;
-            .iconos {
-                nav {
-                    ul {
-                        li {
-                            form {
-                                label {
-                                    input {
-                                        width: 13rem;
-                                        height: 3rem;
-                                        }
-                                    img {
-                                        width: 35px;
-                                    }
-                                }
-                            }
-                            a {
-                                img {
-                                    width: 35px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            nav {
+            grid-template-columns: 20% 20% 18% 24% 9% 9%;
         }
     } 
         main {

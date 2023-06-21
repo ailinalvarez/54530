@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer; }
+
+header {
+    width: 100%;
+    background-color: #B07062;
+    padding: 0.5rem 0;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 30% 25% 7.5% 7.5%;
+    grid-template-rows: auto;
+    justify-content: start;
+    align-items: center;
+    gap: 1px; }
+
+.simple {
+    padding-left: 40px;
+    letter-spacing: 1px;
+    font-size: 47px;
+    color: #F0ECE2;
+}
+.simple a{
+    color: #F0ECE2;
+    text-decoration: none;
+}
+h3 {
+    font-weight: 200; }
+
+.barraplant {
+        color: #F0ECE2;
+        padding: 1em 0;
+        letter-spacing: 1px;}
+
+.barraplant h4 em {
+    padding: 2px 0;
+    font-size: 20px;
+    font-weight: 350; }
+
+.barraplant h5, .barraplant h5 span {
+        padding: 2px 0;
+        font-size: 20px;
+        font-weight: 350; }
+
+.barraplant h5 span {
+    font-weight: 100; }
+
+.search label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.search label input {
+    display: flex;
+    color: #FEFAE0;
+    background-color: #3B130B30;
+    border: 2px solid #FEFAE041;
+    border-radius: 20px;
+    margin-right: 14px;
+    width: 12rem;
+    height: 50px;
+    font-size: 20px;
+    align-self: center;
+}
+
+.search label input:focus {
+    outline-color: #B07062;
+    border: 3px solid #FEFAE0;
+    box-shadow: #F0ECE2;
+    background-color: #F0ECE2;
+    color: #3B130B; }
+
+.fa-solid  {
+    font-size: 37px;
+    color: #FEFAE0;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 110px;
+    background: #B07062; 
+    text-align: center;
+    transition: all .3s;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 60px;
+    transition: all .3s;
+}
+
+.nav-menu li a {
+    color: #3B130B;;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: #FEFAE0;
+    transition: .2s;
+    transform: scale(0.5);
+}
+
+#check {
+    display: none;
+}
+
+#check:checked  ~ .nav-menu {
+    height: 32vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+    
+}

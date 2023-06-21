@@ -2,29 +2,30 @@
 header {
     width: 100%;
     background-color: $color-brown;
-    list-style: none;
-    padding: 0.5rem 7rem 0.5rem 5rem;
-    section {
-        @include grid (20% 30% 15% 35%,repeat(1, 1fr),"bsimple bpbp  aside bn",1px);
+    nav {
+        @include grid (20% 20% 26% 20% 7% 7%,auto,"simple plant aside lupa bag menu",1px);
+        height: 100px;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
         .simple {
-            padding: 1rem 0;
+            grid-area: simple;
+            padding: 20px;
             letter-spacing: 1px;
             font-size: 47px;
             color: $color-clarito;
-            grid-area: bsimple;
             a{
                 color:$color-clarito;
-                text-decoration: none;
             }
             h3 {
-                    font-weight: 200;
+                font-weight: 200;
             }
         }
         .barraplant {
+            grid-area: plant;
             color: $color-clarito;
             padding: 1em 0;
             letter-spacing: 1px;
-            grid-area: bpbp;
             h4 {
                 em {
                 padding: 2px 0;
@@ -42,46 +43,84 @@ header {
                 }
             }
         }
-        .iconos {
-            grid-area: bn ;
-            nav {
-                ul {
-                    width: 100%;
+        #check {
+            display: none;
+        }
+        #check:checked  ~ .nav-menu {
+            height: 37vh;
+        }
+        #check:checked  ~ .nav-menu li {
+            display: block;
+        }
+        .shopping {
+            grid-area: bag;
+            label {
+                font-size: 37px;
+                color: $color-amarillito;
+                margin: 0 20px;
+            }
+        }
+        .menu {
+            grid-area: menu;
+            font-size: 37px;
+            color: $color-amarillito;
+            margin-right: 30px ;
+        }
+        .search {
+            grid-area: lupa;
+            @extend .shopping;
+            label {
+                @include flex (row, nowrap, center, center);
+                input {
                     display: flex;
-                    gap: 2.5rem;
-                    justify-content: center;
-                    align-items: center;
-                    padding-top: 1rem;
-                    list-style-type: none;
-                    .search {
-                        form{
-                            label{
-                                @include flex (row, nowrap,center, center);
-                                padding-left: 1rem;
-                                input {
-                                    display: flex;
-                                    color: $color-amarillito;
-                                    background-color: #3B130B30;
-                                    border: 2px solid #FEFAE041;
-                                    border-radius: 1em;
-                                    margin-right: 1rem;
-                                    width: 13rem;
-                                    height: 55px;
-                                    font-size: 20px;
-                                    align-self: center;
-                                    &:focus {
-                                        outline-color: $color-brown;
-                                        border: 3px solid $color-amarillito;
-                                        box-shadow: $color-clarito;
-                                        background-color: $color-clarito;
-                                        color: $color-darkbrown;
-                                        }
-                                    }
-                                }
-                            }
-                        }
+                    color: $color-amarillito;
+                    background-color: #3B130B30;
+                    border: 2px solid #FEFAE041;
+                    border-radius: 20px;
+                    margin-right: 14px;
+                    width: 12rem;
+                    height: 50px;
+                    font-size: 20px;
+                    align-self: center;
+                }
+                &:focus {
+                    outline-color: $color-brown;
+                    border: 3px solid $color-amarillito;
+                    box-shadow: $color-amarillito;
+                    background-color: $color-amarillito;
+                    color: $color-darkbrown; 
+                }
+            }
+        }
+        ul {
+            position: absolute;
+            width: 100%;
+            height: 0vh;
+            top: 100px;
+            background: $color-brown; 
+            text-align: center;
+            transition: all .03s;
+            li {
+                display: none;
+                line-height: 60px;
+                transition: all .3s;
+                a {
+                    color: $color-darkbrown;
+                    font-size: 35px;
+                    text-transform: uppercase;
+                    font-weight: 800;
+                    &.active {
+                        color: $color-amarillito;
+                        transition: .02s;
+                        transform: scale(0.5);
+                    }
+                    &:hover {
+                        color: $color-amarillito;
+                        transition: .02s;
+                        transform: scale(1.5);
                     }
                 }
             }
-        }   
-    }
+        }
+    }   
+}

@@ -2,11 +2,9 @@
 @media (max-width:768px) {
 body {
     header {
-        padding-right: 2rem;
-        section {
-            grid-template-columns: 22% 50% 28%;
-            grid-template-areas:
-            "bsimple bpbp bn";
+        nav {
+            height: 90px;
+            grid-template-columns: 25% 45% 10% 10% 10%;
             .simple {
                 a {
                     h3{
@@ -30,17 +28,17 @@ body {
                 h4 {
                     em {    
                         padding: 0;
-                        font-size: 15px;
+                        font-size: 16px;
                         margin: 0;
                     }
                 }
                 h5 {
                     margin-left: 1rem;
-                    font-size: 15px;
+                    font-size: 16px;
                     padding: 0;
                     i {
                         strong {
-                            font-size: 15px;
+                            font-size: 16px;
                             padding: 0;
                         }
                     }
@@ -50,24 +48,34 @@ body {
                     }
                 }
             }
-        }
-        .iconos {
-            nav {
-                ul{
-                    padding-left: 0;
-                    .search {
-                        form {
-                            label{
-                                input {
-                                    display: none;
-                                }
-                            }
-                        }
+            #check:checked  ~ .nav-menu {
+                height: 32.5vh;
+            }
+            ul {
+                top: 90px;
+                li {
+                    line-height: 55px;
+                    a {
+                        font-size: 28px;
+                    }
+                }
+            }
+            .menu {
+                margin-right: 10px;
+            }
+            .shopping {
+                label{
+                    margin: 10px;
+                }
+            }
+            .search {
+                label{
+                    input {
+                        display: none;                            }
                     }
                 }
             }
         }
-    }
 
     main {
         .hero {
@@ -126,7 +134,7 @@ body {
         }
     }
 
-    footer {
+    footer { 
         @include grid(repeat(2, 1fr), repeat (1, 1fr), "ftitulos ficonos", 3px);
             .footerDatos {
                 display: none;
@@ -197,8 +205,8 @@ body {
 
     .deskcatering{
         h2 {
-            padding: 2rem 0 23rem 0;
-            font-size: 64px;
+            padding: 2rem 0 18rem 0;
+            font-size: 60px;
         }
         section {
             gap: 3rem;

@@ -2,21 +2,28 @@
 @media (max-width:550px) {
 body {
     header {
-        section {
-            grid-template-columns: 35% 45% 25%;
+        nav{
+            grid-template-columns: 35% 50% 15%;
             .barraplant {
+                display: flex;
                 margin: 0;
+                justify-content: start;
+                padding: 10px 0 0 4px;
+                h4 {
+                    display: none;
+                }
                 h5 {
-                    margin-left: 1rem;
-                    font-size: 18px;
-                    i{
-                        strong{
-                            font-size: 18px;
-                            font-weight: 800;
-                        }
-                    }
-                    span {
-                        margin: 3px;
+                    font-size: 20px;
+                }
+            }
+            #check:checked  ~ .nav-menu {
+                height: 29.5vh;
+            }
+            ul {
+                li {
+                    line-height: 50px;
+                    a{
+                        font-size: 23px;
                     }
                 }
             }

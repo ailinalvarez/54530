@@ -22,35 +22,42 @@
         <link rel="stylesheet" href="../proyecto-final-wd/pages/desk4.html">
         <link rel="stylesheet" href="../index.html">
         <link rel="shortcut icon" href="../assets/iconos/brote.png" type="image/x-icon">
+        <script src="https://kit.fontawesome.com/c1cf269343.js" crossorigin="anonymous"></script>
 
     </head>
     <body>
         <header>
-            <section>
+            <nav>
                 <div class="simple">
                     <a href="../index.html"><h3>SIMPLE</h3></a>
                 </div>
                 <div class="barraplant">
-                    <h4 class="pbb"><em>Plant Based Pastries</em></h4>
-                    <h5 class="bab"><i><strong>by</strong> </i><span class="Ailin">Ailin Alvarez</span></h5>
+                    <h4><em>Plant Based Pastries</em></h4>
+                    <h5><i><strong>by</strong> </i><span>Ailin Alvarez</span></h5>
                 </div>
-                <div class="iconos">
-                    <nav> 
-                        <ul>
-                            <li class="search">
-                                <form>
-                                    <label>
-                                        <input type="search" name="lupa">
-                                        <img src="../assets/iconos/search.png" alt="lupa">
-                                    </label>
-                                </form>
-                            </li> 
-                            <li class="menu"><a href=""><img src="../assets/iconos/menu.png" alt="menu"></a></li> 
-                            <li class="shopping"><a href=""><img src="../assets/iconos/shopping.png" alt="bolsa de compras"></a></li> 
-                        </ul>
-                    </nav>
+                <div class="search">
+                    <label>
+                        <input type="search" name="lupa">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
                 </div>
-            </section>
+                <div class="shopping">
+                    <label>
+                        <i class="fa-solid fa-basket-shopping"></i>                
+                    </label>
+                </div>
+                <input type="checkbox" id="check">
+                <label for="check" class="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="/pages/desk1.html">Conocenos</a></li>
+                    <li><a href="/pages/desk2.html" >Workshops</a></li>
+                    <li><a href="/pages/desk3.html" class="active">Catering</a></li>
+                    <li><a href="/pages/desk4.html">Contactanos</a></li>
+                </ul>
+            </nav>
         </header>
         
         <main>
@@ -84,9 +91,21 @@
     
             <div class="footerIconos">
                 <ul>
-                    <li><a href="https://www.instagram.com/simple.pastries/"><img src="../assets/iconos/ig.png" alt="IG"></a></li>
-                    <li><a href=""><img src="../assets/iconos/Facebook.png" alt="Facebook"></a></li>
-                    <li><a href=""><img src="../assets/iconos/youtube.png" alt="Youtube"></a></li>
+                    <li>
+                        <a href="https://www.instagram.com/simple.pastries/">
+                            <i class="fa-brands fa-instagram fa-2xl" style="color: #fefae0;"></i>                    
+                        </a>
+                </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-facebook fa-2xl" style="color: #fefae0;"></i>                    
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-youtube fa-2xl" style="color: #fefae0;"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </footer> 

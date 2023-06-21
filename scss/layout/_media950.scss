@@ -3,8 +3,14 @@
 
 body {
     header {
-        padding-left: 2rem;
-        padding-right: 3rem;
+        nav{
+            grid-template-columns: 20% 28% 27% 12.5% 12.5%;
+            grid-template-areas: "simple plant lupa bag menu";
+            .simple {
+                padding: 0;
+                margin-left: 20px;
+            }
+        };
     }
     main {
         .hero {
@@ -52,7 +58,6 @@ body {
     }
     
     footer {
-        padding: 1.5rem 0 0.5rem 3rem;
         .footerDatos {
             p {
                 font-size: 15px;
@@ -60,7 +65,7 @@ body {
         }
         .footerIconos {
             ul{
-                padding-right: 5rem;
+                padding-right: 1rem;
                 li {
                     a{
                         img {
@@ -102,7 +107,7 @@ body {
 
     .deskcatering {
         h2{
-        padding: 2rem 0 27rem 0;
+        padding: 2rem 0 24rem 0;
         font-size: 65px;
         font-weight: 600;
         letter-spacing: 1px;

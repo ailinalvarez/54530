@@ -3,22 +3,8 @@
 
 body{
     header {
-        padding-left: 3rem;
-        padding-right: 4rem;
-        section {
-            grid-template-columns: 20% 40% 40%;
-            grid-template-areas:
-            "bsimple bpbp bn"; 
-            .simple {
-                a{
-                    h3 {
-                        font-size: 40px;
-                    }
-                }
-                h3{
-                    font-size: 40px;
-                }
-            }
+        nav {
+            grid-template-columns: 20% 25% 5% 27% 11.5% 11.5%;
             .barraplant {
                 h4 {
                     font-weight: 350;
@@ -27,36 +13,17 @@ body{
                     font-weight: 350;
                 }
             }
-            .iconos {
-                nav {
-                    ul{
-                        padding-left: 1rem;
-                        margin-bottom: 1rem;
-                        .search {
-                            form {
-                                label{
-                                    input {
-                                        width: 10rem;
-                                        height: 3rem;
-                                    }
-                                    img{
-                                        width: 31px;
-                                    }
-                                }
-                            }
-                        }
-                        li {
-                            a {
-                                img{
-                                    width: 31px;
-                                }
-                            }
-                        }
+            .search {
+                label{
+                    input {
+                    width: 10rem;
+                    height: 3rem;
                     }
                 }
             }
         }
     }
+
 
     main {
         .hero {
@@ -127,7 +94,7 @@ body{
         }
     }
     footer {
-        padding-left: 4rem;
+        padding: 1.5rem 2rem 0.5rem 3rem;
         .footerIconos{
                 ul {
                     li{

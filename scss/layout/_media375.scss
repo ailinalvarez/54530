@@ -2,13 +2,13 @@
 @media (max-width:375px) {
 body {
     header {
-        padding: 5px 25px 5px 10px;
-        section {
-            grid-template-columns: 35% 50% 15%;
+        nav{
+            grid-template-columns: 40% 40% 20%;
+            height: 80px;
             div {
                 a{
                     h3{
-                        font-size: 25px;
+                        font-size: 30px;
                         padding: 0;
                         justify-self: center;
                         align-self: center;
@@ -22,12 +22,20 @@ body {
                 }
             }
             .barraplant {
-                h5 {
-                    align-self: center;
-                }
+                display: none;
             }
-            .iconos {
-                align-self: self-start;
+            #check:checked  ~ .nav-menu {
+                height: 25vh;
+            }
+            ul {
+                top: 80px;
+                li {
+                    line-height: 45px;
+                    a {
+                        font-size: 20px;
+                        
+                    }
+                }
             }
         }
     }
@@ -55,9 +63,6 @@ body {
                 display: none;
             }
         }
-    }
-    footer {
-        padding: 2rem ;
     }
 }
 

@@ -4,6 +4,9 @@
         green: #5F7161
         amarillito: #FEFAE0
         clarito: #F0ECE2 
+
+        variable es un espacio de memoria, para alojar un dato, en este caso valores de propiedades de CSS.
+        $nombre 
         
 */
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
@@ -12,79 +15,118 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif; }
+  font-family: 'Raleway', sans-serif;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
 
 header {
   width: 100%;
-  background-color: #B07062;
-  list-style: none;
-  padding: 0.5rem 7rem 0.5rem 5rem; }
-  header section {
+  background-color: #B07062; }
+  header nav {
     display: grid;
-    grid-template-columns: 20% 30% 15% 35%;
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: "bsimple bpbp  aside bn";
-    gap: 1px; }
-    header section .simple {
-      padding: 1rem 0;
+    grid-template-columns: 20% 20% 26% 20% 7% 7%;
+    grid-template-rows: auto;
+    grid-template-areas: "simple plant aside lupa bag menu";
+    gap: 1px;
+    height: 100px;
+    width: 100%;
+    justify-items: center;
+    align-items: center; }
+    header nav .simple {
+      grid-area: simple;
+      padding: 20px;
       letter-spacing: 1px;
       font-size: 47px;
-      color: #F0ECE2;
-      grid-area: bsimple; }
-      header section .simple a {
-        color: #F0ECE2;
-        text-decoration: none; }
-      header section .simple h3 {
+      color: #F0ECE2; }
+      header nav .simple a {
+        color: #F0ECE2; }
+      header nav .simple h3 {
         font-weight: 200; }
-    header section .barraplant {
+    header nav .barraplant {
+      grid-area: plant;
       color: #F0ECE2;
       padding: 1em 0;
-      letter-spacing: 1px;
-      grid-area: bpbp; }
-      header section .barraplant h4 em {
+      letter-spacing: 1px; }
+      header nav .barraplant h4 em {
         padding: 2px 0;
         font-size: 20px;
         font-weight: 350; }
-      header section .barraplant h5, header section .barraplant h5 span {
+      header nav .barraplant h5, header nav .barraplant h5 span {
         padding: 2px 0;
         font-size: 20px;
         font-weight: 350; }
-        header section .barraplant h5 span {
+        header nav .barraplant h5 span {
           font-weight: 100; }
-    header section .iconos {
-      grid-area: bn; }
-      header section .iconos nav ul {
-        width: 100%;
+    header nav #check {
+      display: none; }
+    header nav #check:checked ~ .nav-menu {
+      height: 37vh; }
+    header nav #check:checked ~ .nav-menu li {
+      display: block; }
+    header nav .shopping, header nav .search {
+      grid-area: bag; }
+      header nav .shopping label, header nav .search label {
+        font-size: 37px;
+        color: #FEFAE0;
+        margin: 0 20px; }
+    header nav .menu {
+      grid-area: menu;
+      font-size: 37px;
+      color: #FEFAE0;
+      margin-right: 30px; }
+    header nav .search {
+      grid-area: lupa; }
+      header nav .search label {
         display: flex;
-        gap: 2.5rem;
+        flex-direction: row;
+        flex-wrap: nowrap;
         justify-content: center;
-        align-items: center;
-        padding-top: 1rem;
-        list-style-type: none; }
-        header section .iconos nav ul .search form label {
+        align-items: center; }
+        header nav .search label input {
           display: flex;
-          flex-direction: row;
-          flex-wrap: nowrap;
-          justify-content: center;
-          align-items: center;
-          padding-left: 1rem; }
-          header section .iconos nav ul .search form label input {
-            display: flex;
+          color: #FEFAE0;
+          background-color: #3B130B30;
+          border: 2px solid #FEFAE041;
+          border-radius: 20px;
+          margin-right: 14px;
+          width: 12rem;
+          height: 50px;
+          font-size: 20px;
+          align-self: center; }
+        header nav .search label:focus {
+          outline-color: #B07062;
+          border: 3px solid #FEFAE0;
+          box-shadow: #FEFAE0;
+          background-color: #FEFAE0;
+          color: #3B130B; }
+    header nav ul {
+      position: absolute;
+      width: 100%;
+      height: 0vh;
+      top: 100px;
+      background: #B07062;
+      text-align: center;
+      transition: all .03s; }
+      header nav ul li {
+        display: none;
+        line-height: 60px;
+        transition: all .3s; }
+        header nav ul li a {
+          color: #3B130B;
+          font-size: 35px;
+          text-transform: uppercase;
+          font-weight: 800; }
+          header nav ul li a.active {
             color: #FEFAE0;
-            background-color: #3B130B30;
-            border: 2px solid #FEFAE041;
-            border-radius: 1em;
-            margin-right: 1rem;
-            width: 13rem;
-            height: 55px;
-            font-size: 20px;
-            align-self: center; }
-            header section .iconos nav ul .search form label input:focus {
-              outline-color: #B07062;
-              border: 3px solid #FEFAE0;
-              box-shadow: #F0ECE2;
-              background-color: #F0ECE2;
-              color: #3B130B; }
+            transition: .02s;
+            transform: scale(0.5); }
+          header nav ul li a:hover {
+            color: #FEFAE0;
+            transition: .02s;
+            transform: scale(1.5); }
 
 main .hero {
   width: 100%; }
@@ -225,7 +267,7 @@ main .hero {
   text-align: center;
   padding: 3rem; }
   .deskcatering h2 {
-    padding: 4rem 0 40rem 0;
+    padding: 3rem 0 25rem 0;
     text-align: center;
     font-size: 70px;
     font-weight: 600;
@@ -303,9 +345,10 @@ footer {
   display: grid;
   background-color: #B07062;
   color: #F0ECE2;
-  padding: 2rem 0 0.5rem 7rem;
+  padding: 2rem 7rem 0.5rem 4rem;
   letter-spacing: 1px;
-  justify-content: space-evenly; }
+  justify-content: space-evenly;
+  overflow: hidden; }
   footer .footerTitulos {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -324,7 +367,7 @@ footer {
       footer .footerTitulos h4 a {
         text-decoration: none;
         color: #F0ECE2; }
-    footer .footerTitulos h5, footer .footerTitulos header section .barraplant h5 span, header section .barraplant h5 footer .footerTitulos span {
+    footer .footerTitulos h5, footer .footerTitulos header nav .barraplant h5 span, header nav .barraplant h5 footer .footerTitulos span {
       font-weight: 200;
       grid-area: pbp; }
     footer .footerTitulos .failin {
@@ -337,7 +380,6 @@ footer {
     grid-template-rows: repeat(3, 1fr); }
   footer .footerIconos ul {
     grid-area: ficonos;
-    padding-right: 7rem;
     list-style: none;
     gap: 20px;
     display: flex;
@@ -347,9 +389,11 @@ footer {
     align-items: center; }
     footer .footerIconos ul li {
       display: flex;
-      align-self: center; }
-      footer .footerIconos ul li a img {
-        width: 37px; }
+      align-self: center;
+      height: 37px;
+      width: 37px;
+      align-content: center;
+      justify-content: center; }
 
 .chocotorta .botones div button {
   width: 20rem;
@@ -462,26 +506,19 @@ footer {
   font-size: 22px; }
 
 @media (max-width: 1440px) {
-  body header section {
-    grid-template-columns: 20% 30% 5% 45%; }
-    body header section .simple h3 {
+  body header nav {
+    grid-template-columns: 20% 20% 20% 24% 7% 9%; }
+    body header nav .simple h3 {
       font-size: 45px; }
-    body header section .barraplant h4 em {
+    body header nav .barraplant h4 em {
       padding-left: 23px;
       font-weight: 300;
       font-size: 18px; }
-    body header section .barraplant h5 i strong, body header section .barraplant h5 span strong {
+    body header nav .barraplant h5 i strong, body header nav .barraplant h5 span strong {
       padding-left: 20px;
       font-size: 18px; }
-    body header section .barraplant h5 span {
+    body header nav .barraplant h5 span {
       font-weight: 300; }
-    body header section .iconos nav ul {
-      padding-left: 3rem;
-      justify-content: end; }
-      body header section .iconos nav ul li form label img {
-        width: 37px; }
-      body header section .iconos nav ul li a img {
-        width: 37px; }
   body main .hero .titulos {
     height: 320px; }
     body main .hero .titulos h1 {
@@ -539,15 +576,8 @@ footer {
     font-size: 22px; } }
 
 @media (max-width: 1270px) {
-  body header section {
-    grid-template-columns: 20% 30% 10% 40%; }
-    body header section .iconos nav ul li form label input {
-      width: 13rem;
-      height: 3rem; }
-    body header section .iconos nav ul li form label img {
-      width: 35px; }
-    body header section .iconos nav ul li a img {
-      width: 35px; }
+  body header nav {
+    grid-template-columns: 20% 20% 18% 24% 9% 9%; }
   body main .hero .cookies {
     height: 35rem; }
   body main .hero .titulos {
@@ -608,27 +638,28 @@ footer {
     height: 33rem; } }
 
 @media (max-width: 1118px) {
-  body header {
-    padding-left: 4.5rem;
-    padding-right: 5.5rem; }
-    body header section .simple h3 {
-      font-size: 42px; }
-    body header section .simple a h3 {
-      font-size: 42px; }
-    body header section .barraplant h4 em {
+  body header nav {
+    grid-template-columns: 20% 20% 15% 25% 10% 10%; }
+    body header nav .simple {
+      padding: 0; }
+      body header nav .simple h3 {
+        font-size: 42px; }
+      body header nav .simple a h3 {
+        font-size: 42px; }
+    body header nav .barraplant h4 em {
       font-size: 16px;
       margin-left: 10px; }
-    body header section .barraplant h5, body header section .barraplant h5 span {
+    body header nav .barraplant h5, body header nav .barraplant h5 span {
       font-size: 16px;
       margin-left: 10px; }
-      body header section .barraplant h5 span {
+      body header nav .barraplant h5 span {
         margin: 3px; }
-    body header section .iconos {
-      justify-content: flex-end; }
-      body header section .iconos nav ul li form label img {
-        width: 33px; }
-      body header section .iconos nav ul li a img {
-        width: 33px; }
+    body header nav #check:checked ~ .nav-menu {
+      height: 34.5vh; }
+    body header nav ul li {
+      line-height: 57px; }
+      body header nav ul li a {
+        font-size: 32px; }
   body main .hero .titulos {
     height: 290px; }
     body main .hero .titulos h1 {
@@ -653,7 +684,7 @@ footer {
     overflow: hidden;
     height: 100%; }
     .deskcatering h2 {
-      padding: 1.5rem 0 34rem 0;
+      padding: 1.5rem 0 24rem 0;
       font-size: 67px;
       letter-spacing: 2px; }
     .deskcatering section div button {
@@ -682,30 +713,15 @@ footer {
       font-size: 21px; } }
 
 @media (max-width: 1024px) {
-  body header {
-    padding-left: 3rem;
-    padding-right: 4rem; }
-    body header section {
-      grid-template-columns: 20% 40% 40%;
-      grid-template-areas: "bsimple bpbp bn"; }
-      body header section .simple a h3 {
-        font-size: 40px; }
-      body header section .simple h3 {
-        font-size: 40px; }
-      body header section .barraplant h4 {
-        font-weight: 350; }
-      body header section .barraplant h5, body header section .barraplant h5 span {
-        font-weight: 350; }
-      body header section .iconos nav ul {
-        padding-left: 1rem;
-        margin-bottom: 1rem; }
-        body header section .iconos nav ul .search form label input {
-          width: 10rem;
-          height: 3rem; }
-        body header section .iconos nav ul .search form label img {
-          width: 31px; }
-        body header section .iconos nav ul li a img {
-          width: 31px; }
+  body header nav {
+    grid-template-columns: 20% 25% 5% 27% 11.5% 11.5%; }
+    body header nav .barraplant h4 {
+      font-weight: 350; }
+    body header nav .barraplant h5, body header nav .barraplant h5 span {
+      font-weight: 350; }
+    body header nav .search label input {
+      width: 10rem;
+      height: 3rem; }
   body main .hero .cookies {
     height: 32rem; }
   body main .hero .titulos h1 {
@@ -743,7 +759,7 @@ footer {
       body main .hero .secciones .bp button a {
         font-size: 21px; }
   body footer {
-    padding-left: 4rem; }
+    padding: 1.5rem 2rem 0.5rem 3rem; }
     body footer .footerIconos ul li a img {
       width: 31px; }
   /*DESKTOP 1*/
@@ -815,9 +831,12 @@ footer {
     height: 450px; } }
 
 @media (max-width: 950px) {
-  body header {
-    padding-left: 2rem;
-    padding-right: 3rem; }
+  body header nav {
+    grid-template-columns: 20% 28% 27% 12.5% 12.5%;
+    grid-template-areas: "simple plant lupa bag menu"; }
+    body header nav .simple {
+      padding: 0;
+      margin-left: 20px; }
   body main .hero .cookies {
     height: 29rem; }
   body main .hero .titulos {
@@ -844,14 +863,12 @@ footer {
       font-size: 20px; }
     body main .hero .secciones .bp button {
       border-radius: 20px; }
-  body footer {
-    padding: 1.5rem 0 0.5rem 3rem; }
-    body footer .footerDatos p {
-      font-size: 15px; }
-    body footer .footerIconos ul {
-      padding-right: 5rem; }
-      body footer .footerIconos ul li a img {
-        width: 28px; }
+  body footer .footerDatos p {
+    font-size: 15px; }
+  body footer .footerIconos ul {
+    padding-right: 1rem; }
+    body footer .footerIconos ul li a img {
+      width: 28px; }
   /*DESK 1*/
   .deskconocenos .desk1 {
     padding: 1.5rem; }
@@ -867,7 +884,7 @@ footer {
     padding-top: 1.5rem; }
   /*DESK 3*/
   .deskcatering h2 {
-    padding: 2rem 0 27rem 0;
+    padding: 2rem 0 24rem 0;
     font-size: 65px;
     font-weight: 600;
     letter-spacing: 1px; }
@@ -892,43 +909,51 @@ footer {
       font-size: 22px; } }
 
 @media (max-width: 768px) {
-  body header {
-    padding-right: 2rem; }
-    body header section {
-      grid-template-columns: 22% 50% 28%;
-      grid-template-areas: "bsimple bpbp bn"; }
-      body header section .simple a h3 {
+  body header nav {
+    height: 90px;
+    grid-template-columns: 25% 45% 10% 10% 10%; }
+    body header nav .simple a h3 {
+      padding: 0;
+      font-size: 37px; }
+    body header nav .simple h3 {
+      padding: 0;
+      font-size: 37px; }
+    body header nav .barraplant {
+      padding-bottom: 1.5rem;
+      width: 100%;
+      display: flex;
+      align-items: end;
+      letter-spacing: 0;
+      font-weight: 250;
+      justify-content: center; }
+      body header nav .barraplant h4 em {
         padding: 0;
-        font-size: 37px; }
-      body header section .simple h3 {
-        padding: 0;
-        font-size: 37px; }
-      body header section .barraplant {
-        padding-bottom: 1.5rem;
-        width: 100%;
-        display: flex;
-        align-items: end;
-        letter-spacing: 0;
-        font-weight: 250;
-        justify-content: center; }
-        body header section .barraplant h4 em {
-          padding: 0;
-          font-size: 15px;
-          margin: 0; }
-        body header section .barraplant h5, body header section .barraplant h5 span {
-          margin-left: 1rem;
-          font-size: 15px;
+        font-size: 16px;
+        margin: 0; }
+      body header nav .barraplant h5, body header nav .barraplant h5 span {
+        margin-left: 1rem;
+        font-size: 16px;
+        padding: 0; }
+        body header nav .barraplant h5 i strong, body header nav .barraplant h5 span strong {
+          font-size: 16px;
           padding: 0; }
-          body header section .barraplant h5 i strong, body header section .barraplant h5 span strong {
-            font-size: 15px;
-            padding: 0; }
-          body header section .barraplant h5 span {
-            padding: 0;
-            margin: 0; }
-    body header .iconos nav ul {
-      padding-left: 0; }
-      body header .iconos nav ul .search form label input {
-        display: none; }
+        body header nav .barraplant h5 span {
+          padding: 0;
+          margin: 0; }
+    body header nav #check:checked ~ .nav-menu {
+      height: 32.5vh; }
+    body header nav ul {
+      top: 90px; }
+      body header nav ul li {
+        line-height: 55px; }
+        body header nav ul li a {
+          font-size: 28px; }
+    body header nav .menu {
+      margin-right: 10px; }
+    body header nav .shopping label, body header nav .search label {
+      margin: 10px; }
+    body header nav .search label input {
+      display: none; }
   body main .hero .cookies {
     display: none; }
   body main .hero .titulos {
@@ -1010,8 +1035,8 @@ footer {
         font-size: 30px; }
   /*DESK 3*/
   .deskcatering h2 {
-    padding: 2rem 0 23rem 0;
-    font-size: 64px; }
+    padding: 2rem 0 18rem 0;
+    font-size: 60px; }
   .deskcatering section {
     gap: 3rem; }
     .deskcatering section div button {
@@ -1023,32 +1048,26 @@ footer {
     padding: 3rem; } }
 
 @media (max-width: 650px) {
-  body header section {
-    grid-template-columns: 25% 50% 25%; }
-    body header section .barraplant {
+  body header nav {
+    grid-template-columns: 30% 55% 15%;
+    grid-template-areas: "simple plant menu"; }
+    body header nav .barraplant {
       padding-bottom: 15px;
       align-items: flex-end;
       padding-bottom: 22px;
       margin-left: 1rem; }
-      body header section .barraplant h4 em {
+      body header nav .barraplant h4 em {
         font-size: 16px;
         font-weight: 250;
         gap: 1em; }
-      body header section .barraplant h5, body header section .barraplant h5 span {
+      body header nav .barraplant h5, body header nav .barraplant h5 span {
         font-size: 16px;
         font-weight: 250;
         gap: 1em; }
-    body header section .iconos nav ul {
-      margin-top: 1rem;
-      margin-bottom: 0;
-      padding: 0; }
-      body header section .iconos nav ul li {
-        justify-content: center;
-        padding-top: 5px; }
-      body header section .iconos nav ul .search {
-        display: none; }
-      body header section .iconos nav ul .shopping {
-        display: none; }
+    body header nav .search {
+      display: none; }
+    body header nav .shopping, body header nav .search {
+      display: none; }
   body main .hero .titulos h1 {
     font-size: 69px; }
   body main .hero .titulos h2 {
@@ -1072,19 +1091,6 @@ footer {
           font-size: 27px; } }
 
 @media (max-width: 620px) {
-  body header section .barraplant {
-    justify-content: start;
-    margin-right: 0.5rem; }
-    body header section .barraplant h4 {
-      display: none; }
-    body header section .barraplant h5, body header section .barraplant h5 span {
-      margin-left: 1rem;
-      font-size: 20px; }
-      body header section .barraplant h5 i strong, body header section .barraplant h5 span strong {
-        font-size: 20px;
-        font-weight: 800; }
-      body header section .barraplant h5 span {
-        margin: 5px; }
   body main .hero .titulos {
     height: 220px; }
     body main .hero .titulos h1 {
@@ -1147,18 +1153,23 @@ footer {
       font-size: 20px; } }
 
 @media (max-width: 550px) {
-  body header section {
-    grid-template-columns: 35% 45% 25%; }
-    body header section .barraplant {
-      margin: 0; }
-      body header section .barraplant h5, body header section .barraplant h5 span {
-        margin-left: 1rem;
-        font-size: 18px; }
-        body header section .barraplant h5 i strong, body header section .barraplant h5 span strong {
-          font-size: 18px;
-          font-weight: 800; }
-        body header section .barraplant h5 span {
-          margin: 3px; }
+  body header nav {
+    grid-template-columns: 35% 50% 15%; }
+    body header nav .barraplant {
+      display: flex;
+      margin: 0;
+      justify-content: start;
+      padding: 10px 0 0 4px; }
+      body header nav .barraplant h4 {
+        display: none; }
+      body header nav .barraplant h5, body header nav .barraplant h5 span {
+        font-size: 20px; }
+    body header nav #check:checked ~ .nav-menu {
+      height: 29.5vh; }
+    body header nav ul li {
+      line-height: 50px; }
+      body header nav ul li a {
+        font-size: 23px; }
   body main .hero .titulos {
     height: 180px; }
     body main .hero .titulos h1 {
@@ -1233,37 +1244,20 @@ footer {
       font-size: 20px; } }
 
 @media (max-width: 425px) {
-  body header {
-    padding: 0.5rem 1rem; }
-    body header section {
-      grid-template-columns: 30% 50% 20%;
-      grid-template-areas: "bsimple bpbp bn";
-      align-content: end; }
-      body header section .simple {
-        padding: 0;
-        align-self: center; }
-        body header section .simple h3 {
-          font-size: 30px;
-          padding: 0; }
-        body header section .simple a h3 {
-          font-size: 28px;
-          padding: 0; }
-      body header section .barraplant {
-        padding: 0;
-        display: flex;
-        align-self: center;
-        justify-content: center; }
-        body header section .barraplant h5, body header section .barraplant h5 span {
-          padding: 0;
-          align-self: center;
-          font-size: 15px;
-          font-weight: 200; }
-          body header section .barraplant h5 i strong, body header section .barraplant h5 span strong {
-            font-size: 15px;
-            font-weight: 600; }
-      body header section .iconos nav ul {
-        margin-top: 0;
-        align-items: center; }
+  body header nav {
+    grid-template-columns: 40% 45% 15%; }
+    body header nav .simple h3 {
+      font-size: 33px;
+      padding: 0; }
+    body header nav .simple a h3 {
+      font-size: 33px;
+      padding: 0; }
+    body header nav .barraplant h5, body header nav .barraplant h5 span {
+      font-size: 20px;
+      font-weight: 200; }
+      body header nav .barraplant h5 i strong, body header nav .barraplant h5 span strong {
+        font-size: 20px;
+        font-weight: 600; }
   body main .hero .titulos {
     height: 150px; }
     body main .hero .titulos h1 {
@@ -1289,16 +1283,14 @@ footer {
       body main .hero .chocotorta .botones div :hover h2 {
         font-size: 30px; }
   body footer {
-    display: flex;
-    padding: 1.5rem 1rem; }
+    padding-top: 2rem;
+    display: flex; }
     body footer .footerTitulos {
       display: none; }
     body footer .footerIconos {
       margin-top: 0;
-      justify-self: center;
-      justify-content: center;
-      align-self: flex-start;
-      width: 29px; }
+      align-content: center;
+      justify-content: center; }
       body footer .footerIconos ul {
         padding: 0; }
   /*DESK 1*/
@@ -1402,24 +1394,29 @@ footer {
       border-radius: 10px; } }
 
 @media (max-width: 375px) {
-  body header {
-    padding: 5px 25px 5px 10px; }
-    body header section {
-      grid-template-columns: 35% 50% 15%; }
-      body header section div a h3 {
-        font-size: 25px;
-        padding: 0;
-        justify-self: center;
-        align-self: center; }
-      body header section div h3 {
-        font-size: 25px;
-        padding: 0;
-        justify-self: center;
-        align-self: center; }
-      body header section .barraplant h5, body header section .barraplant h5 span {
-        align-self: center; }
-      body header section .iconos {
-        align-self: self-start; }
+  body header nav {
+    grid-template-columns: 40% 40% 20%;
+    height: 80px; }
+    body header nav div a h3 {
+      font-size: 30px;
+      padding: 0;
+      justify-self: center;
+      align-self: center; }
+    body header nav div h3 {
+      font-size: 25px;
+      padding: 0;
+      justify-self: center;
+      align-self: center; }
+    body header nav .barraplant {
+      display: none; }
+    body header nav #check:checked ~ .nav-menu {
+      height: 25vh; }
+    body header nav ul {
+      top: 80px; }
+      body header nav ul li {
+        line-height: 45px; }
+        body header nav ul li a {
+          font-size: 20px; }
   body main .hero .chocotorta .botones div button {
     border-radius: 40px;
     width: 16rem; }
@@ -1429,8 +1426,6 @@ footer {
       width: 75%; }
   body main .hero .secciones {
     display: none; }
-  body footer {
-    padding: 2rem; }
   /*DESK 1*/
   .deskconocenos {
     height: 52rem;

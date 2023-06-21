@@ -2,10 +2,10 @@
 @media (max-width:1118px) {
     body {
         header {
-            padding-left: 4.5rem;
-            padding-right: 5.5rem;
-            section {
+            nav {
+                grid-template-columns: 20% 20% 15% 25% 10% 10%;
                 .simple{
+                    padding: 0;
                     h3 {
                         font-size: 42px;
                     }
@@ -30,29 +30,19 @@
                         }
                     }
                 }
-            .iconos {
-                justify-content: flex-end;
-                nav {
-                    ul{
-                        li {
-                            form {
-                                label {
-                                    img {
-                                        width: 33px;
-                                    }
-                                }
-                            }
-                            a {
-                                img {
-                                    width: 33px;
-                                }
-                            }
+                #check:checked  ~ .nav-menu {
+                    height: 34.5vh;
+                }
+                ul {
+                    li {
+                        line-height: 57px;
+                        a {
+                            font-size: 32px;
                         }
                     }
                 }
-            }
+            }    
         }
-    }
     
         main {
             .hero {
@@ -110,7 +100,7 @@
         overflow: hidden;
         height: 100%;
         h2 {
-            padding: 1.5rem 0 34rem 0;
+            padding: 1.5rem 0 24rem 0;
             font-size: 67px;
             letter-spacing: 2px;
         }

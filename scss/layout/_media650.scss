@@ -3,8 +3,9 @@
 
 body {
     header {
-        section {
-            grid-template-columns: 25% 50% 25%;
+        nav {
+            grid-template-columns: 30% 55% 15%;
+            grid-template-areas: "simple plant menu";
             .barraplant {
                 padding-bottom: 15px;
                 align-items: flex-end;
@@ -23,27 +24,14 @@ body {
                     gap: 1em;
                 }
             }
-            .iconos {
-                nav {
-                    ul {
-                        margin-top: 1rem;
-                        margin-bottom: 0;
-                        padding: 0;
-                        li {
-                            justify-content: center;
-                            padding-top: 5px;
-                            }
-                        .search {
-                            display: none;
-                        }
-                        .shopping {
-                            display: none;
-                        }
-                    }
+            .search {
+                display: none;
+                }
+            .shopping {
+                display: none;
                 }
             }
         }
-    }
     main {
         .hero {
             .titulos {
