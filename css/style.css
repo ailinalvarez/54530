@@ -856,6 +856,8 @@ footer {
         height: 15rem;
         width: 13rem;
         padding: 15px; }
+        body main .hero .chocotorta .botones div :hover h2 {
+          font-size: 30px; }
   body main .hero .secciones {
     height: 250px; }
     body main .hero .secciones .bp p {
