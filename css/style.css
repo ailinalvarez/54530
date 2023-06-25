@@ -63,7 +63,7 @@ header {
     header nav #check {
       display: none; }
     header nav #check:checked ~ .nav-menu {
-      height: 37vh; }
+      height: 380px; }
     header nav #check:checked ~ .nav-menu li {
       display: block; }
     header nav .shopping, header nav .search {
@@ -655,7 +655,7 @@ footer {
       body header nav .barraplant h5 span {
         margin: 3px; }
     body header nav #check:checked ~ .nav-menu {
-      height: 34.5vh; }
+      height: 370px; }
     body header nav ul li {
       line-height: 57px; }
       body header nav ul li a {
@@ -856,8 +856,6 @@ footer {
         height: 15rem;
         width: 13rem;
         padding: 15px; }
-        body main .hero .chocotorta .botones div :hover h2 {
-          font-size: 30px; }
   body main .hero .secciones {
     height: 250px; }
     body main .hero .secciones .bp p {
@@ -943,7 +941,7 @@ footer {
           padding: 0;
           margin: 0; }
     body header nav #check:checked ~ .nav-menu {
-      height: 32.5vh; }
+      height: 350px; }
     body header nav ul {
       top: 90px; }
       body header nav ul li {
@@ -1167,7 +1165,7 @@ footer {
       body header nav .barraplant h5, body header nav .barraplant h5 span {
         font-size: 20px; }
     body header nav #check:checked ~ .nav-menu {
-      height: 29.5vh; }
+      height: 290px; }
     body header nav ul li {
       line-height: 50px; }
       body header nav ul li a {
@@ -1412,7 +1410,7 @@ footer {
     body header nav .barraplant {
       display: none; }
     body header nav #check:checked ~ .nav-menu {
-      height: 25vh; }
+      height: 240px; }
     body header nav ul {
       top: 80px; }
       body header nav ul li {

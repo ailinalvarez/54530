@@ -3,7 +3,7 @@ header {
     width: 100%;
     background-color: $color-brown;
     nav {
-        @include grid (20% 20% 25% 20% 7% 7%,auto,"simple plant aside lupa bag menu",1px);
+        @include grid (20% 20% 26% 20% 7% 7%,auto,"simple plant aside lupa bag menu",1px);
         height: 100px;
         width: 100%;
         justify-items: center;
@@ -47,7 +47,7 @@ header {
             display: none;
         }
         #check:checked  ~ .nav-menu {
-            height: 37vh;
+            height: 380px;
         }
         #check:checked  ~ .nav-menu li {
             display: block;
